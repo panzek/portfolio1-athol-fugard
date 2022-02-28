@@ -6,10 +6,6 @@
     padding: 0;
 }
 
-/* html, body {
-    height: 100%;
-} */
-
 body {
     display: flex;
     width: 100%;
@@ -98,4 +94,22 @@ footer {
     flex: 1 0 100vw;
     background-color: #ff6d00;
 }
+
+footer ul#social-networks {
+    text-align: center;
+}
+
+footer ul#social-networks li {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+
+footer ul#social-networks a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+
 
