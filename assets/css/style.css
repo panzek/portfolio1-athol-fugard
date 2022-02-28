@@ -59,3 +59,24 @@ header {
 .navbar li:not(.active):hover {
     text-decoration: underline overline dotted #ff6d00 4px;
 }
+
+main.home-container {
+    height: 100%;
+    flex: 1 0 100vw;
+}
+
+#hero-image {
+    min-width: 100vw;
+    aspect-ratio: 3/1;
+    background: url('../images/hero-image.webp') center center/cover no-repeat;
+ 
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    flex: 1 0 100vw;
+    background-color: #ff6d00;
+}
