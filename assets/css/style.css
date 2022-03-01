@@ -112,6 +112,10 @@ footer {
     background-color: #ff6d00;
 }
 
+.copyrights {
+    text-align: center;
+}
+
 footer ul#social-networks {
     text-align: center;
 }
