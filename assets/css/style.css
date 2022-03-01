@@ -71,10 +71,11 @@ main.home-container {
 }
 
 .hero-image-text {
-    width: 200px;
-    color: #ccc;
-    top: 10%;
-    right: 40%;
+    width: 250px;
+    color: #e5e5e5;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
 }
 
 #home-card {
@@ -83,7 +84,6 @@ main.home-container {
     align-items: centre;
     flex-wrap: wrap;
     gap: 1rem;
-    /* height: 90%; */
     margin-top: 30%;
     position: relative;
 }
