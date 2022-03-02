@@ -133,78 +133,26 @@ footer ul#social-networks a {
 }
 
 /* Media Queries */
-/* Small Tablets */
-@media (max-width: 280px) {
-    #hero-image {
-        min-width: 70vw;
-        height: 50%;
-        aspect-ratio: 3/1;
-    }
-    
-    #home-card {
-        display: flex;
-        gap: 1rem;
-        margin-top: 90vw;
-    }
-
-    #home-card-feature {
-        width: 90%;
-    }
-}
-
-/* Large tablets */
-@media (max-width: 580px) {
-    #hero-image {
-        min-width: 70vw;
-        height: 50%;
-        aspect-ratio: 3/1;
-    }
-    
-    #home-card {
-        display: flex;
-        gap: 1rem;
-        margin-top: 90vw;
-    }
-
-    #home-card-feature {
-        width: 90%;
-    }
-}
-
-/* Larger Tablets */
-@media (max-width: 780px) {
-    #hero-image {
-        min-width: 70vw;
-        height: 50%;
-        aspect-ratio: 3/1;
-    }
-    
-    #home-card {
-        display: flex;
-        gap: 1rem;
-        margin-top: 90vw;
-    }
-
-    #home-card-feature {
-        width: 90%;
-    }
-}
 
 /* Desktop + Large tablets */
-@media (max-width: 1200px) {
-    #hero-image {
-        min-width: 70vw;
-        height: 50%;
-        aspect-ratio: 3/1;
-    }
-    
+@media (min-width: 560px) {
     #home-card {
         display: flex;
-        gap: 1rem;
-        margin-top: 90vw;
+        flex-direction: row;
+        width: 850px;
+        margin: auto;
+        margin-top: 22%;
+        background-color: #ff6d00;
     }
 
     #home-card-feature {
-        width: 90%;
+        width: 100%;
+        margin: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
