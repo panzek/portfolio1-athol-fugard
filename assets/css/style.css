@@ -18,11 +18,24 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 
+:root {
+    --step--2: clamp(0.69rem, calc(0.59rem + 0.52vw), 0.96rem);
+    --step--1: clamp(0.83rem, calc(0.69rem + 0.72vw), 1.20rem);
+    --step-0: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+    --step-1: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
+    --step-2: clamp(1.44rem, calc(1.09rem + 1.76vw), 2.34rem);
+    --step-3: clamp(1.73rem, calc(1.26rem + 2.35vw), 2.93rem);
+    --step-4: clamp(2.07rem, calc(1.45rem + 3.10vw), 3.66rem);
+    --step-5: clamp(2.49rem, calc(1.67rem + 4.08vw), 4.58rem);
+}
+
 header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 6vh;
+    width: 100%;
+    height: 10vh;
 }
 
 .navbar ul {
@@ -31,68 +44,48 @@ header {
 }
 
 .navbar li {
-    line-height: 263%;
-    height: 263%;
-    width: 100%;
     font-size: 1.4rem;
     list-style: none;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .navbar a {
-    display: block;
     text-decoration: none;
-    color: inherit;
-}
-
-.navbar li.active > a {
-    background-color: #ff6d00;
-    color: inherit;
-}
-
-.navbar a:hover {
-    text-decoration-color: #2e7d32;
-}
-
-.navbar li:not(.active):hover {
-    text-decoration: underline overline dotted #ff6d00 4px;
+    color: #000;
 }
 
 main.home-container {
     height: 100%;
 }
 
+ /* Hero image */
 #hero-image {
     min-width: 100vw;
     aspect-ratio: 3/1;
     background: url('../images/hero-image.webp') center center/cover no-repeat;
-    margin-top: 0;
-    position: absolute;
 }
 
 .hero-image-text {
-    width: 250px;
+    width: 120px;
     color: #e5e5e5;
     margin: auto;
+    font-size: 0.6em;
     padding: 2em;
     text-align: center;
 }
 
+/* card  */
 #home-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    margin-top: 30%;
-    position: relative;
 }
 
 #home-card-feature {
     text-align: center;
-    background: rgb(238, 238, 238);
-    width: 100%;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 #home-card-feature img{
@@ -106,16 +99,16 @@ main.home-container {
     border-left: 4px dotted #ff6d00;
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-grow: 1;
+    width: 100%;
     height: 15vh;
     margin-top: auto;
-    margin: 10px;
     background-color: #ff6d00;
 }
 
@@ -140,13 +133,74 @@ footer ul#social-networks a {
 }
 
 /* Media Queries */
-
 /* Desktop + Large tablets */
 @media (min-width: 560px) {
+
+    /* header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 6vh;
+    }
+
+    .navbar ul {
+        text-align: center;
+    }
+    
+    .navbar li {
+        line-height: 263%;
+        height: 263%;
+        width: 100%;
+        font-size: 1.4rem;
+        list-style: none;
+        margin: 1em;
+    }
+    
+    .navbar a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .navbar li.active > a {
+        background-color: #ff6d00;
+        color: inherit;
+    }
+    
+    .navbar a:hover {
+        text-decoration-color: #2e7d32;
+    }
+    
+    .navbar li:not(.active):hover {
+        text-decoration: underline overline dotted #ff6d00 4px;
+    }
+
+    /* Hero image */
+    #hero-image {
+        min-width: 100vw;
+        aspect-ratio: 3/1;
+        background: url('../images/hero-image.webp') center center/cover no-repeat;
+        margin-top: 0;
+        position: absolute;
+    }
+    
+    .hero-image-text {
+        width: 250px;
+        color: #e5e5e5;
+        margin: auto;
+        font-size: 1em;
+        padding: 2em;
+        text-align: center;
+    }
+    
+    /* card  */
     #home-card {
         display: flex;
         flex-direction: row;
-        width: 850px;
+        width: 50%;
+        position: relative;
         margin: auto;
         margin-top: 22%;
         background-color: #ff6d00;
@@ -155,6 +209,8 @@ footer ul#social-networks a {
     #home-card-feature {
         width: 100%;
         margin: 10px;
+        border-radius: 10px;
+        background: rgb(238, 238, 238);
     }
 
     footer {
@@ -164,6 +220,7 @@ footer ul#social-networks a {
         align-items: center;
         justify-content: space-around;
         align-items: center;
-        height: 8vh;
+        height: 6vh;
+        margin-top: auto;
     }
 }
