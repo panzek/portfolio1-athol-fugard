@@ -113,6 +113,27 @@ main.home-container {
     text-align: center;
 }
 
+#home-card-feature.books-img{
+    width: 100%;
+    aspect-ratio: 1302/1361;
+    text-align: center;
+}
+
+.home-card-feature i {
+    width: 50%;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border-radius: 80px;
+}
+
+#home-card-feature a {
+    color: #2e7d32;
+}
+
+#home-card-feature a:hover {
+    color: #ff6d00;
+}
+
 #feature-heading {
     margin: 10px;
     border-left: 4px dotted #ff6d00;
