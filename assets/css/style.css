@@ -29,6 +29,7 @@ body {
     --step-5: clamp(2.49rem, calc(1.67rem + 4.08vw), 4.58rem);
 }
 
+/* header and navigation bar */
 header {
     display: flex;
     flex-direction: column;
@@ -40,6 +41,7 @@ header {
     background-color: #ff6d00;
 }
 
+/* logo */
 #logo {
     color: #000;
     text-decoration: none;
@@ -132,6 +134,7 @@ main.home-container {
 
 #home-card-feature a {
     color: #2e7d32;
+    background-color: #f9f9f9;
 }
 
 #home-card-feature a:hover {
@@ -159,7 +162,6 @@ footer {
 footer input[type="email"], .signup-btn {
     padding: 0.5em;
     border: none;
-    /* border-top-right-radius: 30%; */
 }
 
 .signup-btn {
@@ -198,16 +200,20 @@ footer ul#social-networks a {
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         height: 6vh;
         background-color: #fff;
-        margin-left: 20px;
     }
 
+    div#logo {
+        margin: 30px;
+        text-align: center;
+    }
+    
+    /* navigation bar */
     .navbar ul {
         text-align: center;
-        margin-right: 20px;
     }
     
     .navbar li {
