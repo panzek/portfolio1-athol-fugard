@@ -63,7 +63,6 @@ header {
 }
 
 .navbar a {
-    /* display: block; */
     text-decoration: none;
     color: #000;
 }
@@ -143,7 +142,6 @@ main.home-container {
 
 #feature-heading {
     margin: 10px;
-    border-left: 4px dotted #ff6d00;
 }
 
 /* Footer */
