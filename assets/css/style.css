@@ -81,7 +81,7 @@ main.home-container {
     height: 100%;
 }
 
- /* Hero image */
+ /* Home Hero image */
 #hero-image {
     min-width: 100vw;
     aspect-ratio: 285/211;
@@ -101,7 +101,7 @@ main.home-container {
     left: 0;
 }
 
-/* card  */
+/* home card  */
 #home-card {
     display: flex;
     flex-direction: column;
@@ -145,6 +145,26 @@ main.home-container {
 
 #feature-heading {
     margin: 10px;
+}
+
+/* contact card  */
+#contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#contact-card-feature {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+#contact-card-feature img{
+    width: 100%;
+    aspect-ratio: 285/211;
+    text-align: center;
 }
 
 /* Footer */
@@ -281,6 +301,26 @@ footer ul#social-networks a {
         background: rgb(238, 238, 238);
     }
 
+    /* contact card  */
+    #contact-card {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        position: relative;
+        margin: auto;
+        margin-top: 10%;
+        background-color:rgb(238, 238, 238);
+    }
+
+    #contact-card-feature {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        border-radius: 10px;
+        background: #fff;
+    }
+
+    /* footer */
     footer {
         display: flex;
         flex-direction: row;
