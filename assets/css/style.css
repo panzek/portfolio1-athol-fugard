@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+h2 {
+    color: #000;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -214,7 +218,7 @@ footer ul#social-networks a {
 }
 
 /* Media Queries */
-/* Desktop + Large tablets */
+/* tablet and desktop size screens */
 @media (min-width: 560px) {
 
     /* header */
@@ -284,7 +288,7 @@ footer ul#social-networks a {
         text-align: center;
     }
     
-    /* card  */
+    /* home card  */
     #home-card {
         display: flex;
         flex-direction: row;
@@ -301,6 +305,15 @@ footer ul#social-networks a {
         background: rgb(238, 238, 238);
     }
 
+    /* contact hero image */
+    #contact-hero-image {
+        min-width: 100vw;
+        aspect-ratio: 5/2;
+        background: #000 url('../images/hero-image.webp') center center/cover no-repeat;
+        margin-top: 0;
+        position: absolute;
+    }
+
     /* contact card  */
     #contact-card {
         display: flex;
@@ -308,18 +321,17 @@ footer ul#social-networks a {
         width: 50%;
         position: relative;
         margin: auto;
-        margin-top: 10%;
-        background-color:rgb(238, 238, 238);
+        margin-top: 22%;
+        background-color:#fff;
+        border-radius: 10px;
     }
 
     #contact-card-feature {
         width: 100%;
-        height: 100%;
         margin: 10px;
         border-radius: 10px;
-        background: #fff;
+        border: 2px solid rgb(238, 238, 238);
     }
-
     /* footer */
     footer {
         display: flex;
