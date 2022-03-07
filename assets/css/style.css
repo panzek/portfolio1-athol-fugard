@@ -180,6 +180,7 @@ main.books-container {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 40px;
 }
 
 #contact-card-feature {
@@ -216,6 +217,7 @@ footer input[type="email"], .signup-btn {
     background-color: #000;
     color:rgb(238, 238, 238);
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .copyrights {
@@ -372,7 +374,9 @@ footer ul#social-networks a {
         position: relative;
         margin: auto;
         margin-top: 22%;
+        margin-bottom: 40px;
         background-color:#fff;
+        border: 2px solid rgb(238, 238, 238);
         border-radius: 10px;
     }
 
@@ -380,7 +384,6 @@ footer ul#social-networks a {
         width: 100%;
         margin: 10px;
         border-radius: 10px;
-        border: 2px solid rgb(238, 238, 238);
     }
 
     /* footer */
@@ -393,5 +396,19 @@ footer ul#social-networks a {
         align-items: center;
         margin-top: auto;
         padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    /* Hero image */
+    #hero-image {
+        min-width: 100vw;
+        aspect-ratio: 3/1;
+        background: #000 url('../images/hero-image.webp') center center/cover no-repeat;
+        margin-top: 0;
+        position: absolute;
+        height: 55vh;
+        background-position-x: -700px;
     }
 }
