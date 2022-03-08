@@ -150,6 +150,27 @@ main.home-container {
     margin: 10px;
 }
 
+/* Bio card  */
+main.bio-container {
+    height: 100%;
+    display: flex;
+}
+
+#bio-card-feature {
+    text-align: center;
+}
+
+#bio-card-feature2 {
+    margin: 5px;
+    padding: 5px;
+}
+
+#bio-card-feature img{
+    width: 100%;
+    aspect-ratio: 256 / 389;
+    text-align: center;
+} 
+
 /* books card  */
 main.books-container {
     height: 100%;
@@ -328,6 +349,45 @@ footer ul#social-networks a {
         background: rgb(238, 238, 238);
     }
 
+    /* Bio card  */
+    main.bio-container {
+        height: 100%;
+    }
+    
+    #bio-card {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        position: relative;
+        margin: auto;
+        margin-top: 3%;
+        background-color: rgb(245,245,245);
+        border: 2px solid rgb(220,220,220);
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    /* #bio-card-feature {
+        width: 50%;
+        margin: 10px;
+        border-radius: 10px; 
+    } */
+
+    #bio-card-feature {
+        text-align: center;
+    }
+    
+    #bio-card-feature2 {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #bio-card-feature img{
+        width: 100%;
+        aspect-ratio: 256 / 389; 
+        text-align: center;
+    }
+    
      /* Books card  */
      main.books-container {
         height: 100%;
