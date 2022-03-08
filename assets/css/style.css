@@ -461,17 +461,3 @@ footer ul#social-networks a {
         padding: 0 20px;
     }
 }
-
-@media (min-width: 768px) {
-    
-    /* Hero image */
-    #hero-image {
-        min-width: 100vw;
-        aspect-ratio: 3/1;
-        background: #000 url('../images/hero-image.webp') center center/cover no-repeat;
-        margin-top: 0;
-        position: absolute;
-        height: 55vh;
-        background-position-x: -700px;
-    }
-}
