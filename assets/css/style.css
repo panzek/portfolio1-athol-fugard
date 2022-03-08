@@ -311,7 +311,7 @@ footer ul#social-networks a {
     }
     
     .navbar li:not(.active):hover {
-        text-decoration: underline overline dotted #ff6d00 4px;
+        text-decoration: underline #ff6d00 4px;
     }
 
     /* Hero image */
@@ -366,12 +366,6 @@ footer ul#social-networks a {
         border-radius: 10px;
         margin-bottom: 40px;
     }
-
-    /* #bio-card-feature {
-        width: 50%;
-        margin: 10px;
-        border-radius: 10px; 
-    } */
 
     #bio-card-feature {
         text-align: center;
