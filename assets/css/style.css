@@ -282,7 +282,15 @@ footer ul#social-networks a {
 
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
-    .lesson-from-aloes, hr {
+
+    #home-card-feature.home-order {
+        order: -1;
+    }
+
+    .lesson-from-aloes, 
+    hr,
+    .hero-image-text, 
+    .home-img {
         display: none;
     }
 
