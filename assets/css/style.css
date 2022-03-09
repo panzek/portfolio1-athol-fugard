@@ -150,6 +150,14 @@ main.home-container {
     margin: 10px;
 }
 
+#quotes {
+    text-align: center;
+}
+
+.feature-intro a {
+    color: #000;
+}
+
 /* Bio card  */
 main.bio-container {
     height: 100%;
@@ -166,11 +174,7 @@ main.bio-container {
     aspect-ratio: 87 / 128;
 }
 
-#bio-intro {
-    text-align: center;
-}
-
-.bio-intro-link a {
+.bio-intro a {
     color: #000;
 }
 
@@ -189,14 +193,6 @@ main.books-container {
 #books-card-feature img{
     width: 100%;
     aspect-ratio: 87 / 128;
-}
-
-#books-intro {
-    text-align: center;
-}
-
-.books-intro-link a {
-    color: #000;
 }
 
 /* contact card  */
@@ -281,8 +277,22 @@ footer ul#social-networks a {
 
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
-    .lesson-from-aloes {
+    .lesson-from-aloes, hr {
         display: none;
+    }
+
+    #quotes {
+        border-width: 2px 0;
+        border-style: dotted;
+        padding: 10px;
+    }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: left;
     }
 }
 
@@ -332,6 +342,10 @@ footer ul#social-networks a {
     }
     
     .navbar li:not(.active):hover {
+        text-decoration: underline #ff6d00 4px;
+    }
+
+    .feature-intro a:hover {
         text-decoration: underline #ff6d00 4px;
     }
 
@@ -395,10 +409,6 @@ footer ul#social-networks a {
     #bio-card-feature img {
         width: 100%;
         aspect-ratio: 256 / 389;
-    }
-
-    .bio-intro-link a:hover {
-        text-decoration: underline #ff6d00 4px;
     }
 
      /* Books card  */
