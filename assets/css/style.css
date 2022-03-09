@@ -183,6 +183,24 @@ main.bio-container {
     color: #000;
 }
 
+/* aside section  */
+aside.book-list {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+aside.book-list ul {
+    list-style: square inside;
+    margin: 10px;
+}
+
+aside.book-list ul li {
+    color: #2e7d32 3px
+}
 
 /* books card  */
 main.books-container {
@@ -422,6 +440,24 @@ footer ul#social-networks a {
     #bio-card-feature img {
         width: 100%;
         aspect-ratio: 256 / 389;
+    }
+
+    aside.book-list {
+        width: 250px;
+        margin: 20px 0 20px 0;
+        padding: 10px;
+        border-radius: 10px 0 0 10px;
+        background-color:antiquewhite;
+        text-align: center;
+    }
+    
+    aside.book-list ul {
+        list-style: square inside;
+        margin: 10px;
+    }
+
+    aside.book-list ul li {
+        color: #2e7d32 3px
     }
 
      /* Books card  */
