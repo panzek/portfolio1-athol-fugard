@@ -89,26 +89,6 @@ main.container {
     height: 100%;
 }
 
- /* Hero image */
-/* #hero-image {
-    min-width: 100vw;
-    aspect-ratio: 285/211;
-    background: url('../images/athol_fugard_1.webp') center center/cover no-repeat;
-    position: relative;
-} */
-
-/* .hero-image-text {
-    width: 120px;
-    color: #e5e5e5;
-    margin: auto;
-    font-size: 0.6em;
-    padding: 2em;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
-
 /* figure*/
 #card-feature img {
     width: 100%;
@@ -128,20 +108,12 @@ main.container {
     margin: 10px;
 }
 
-.feature-intro a {
-    color: #000;
-}
-
 /* home card  */
 #home-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-}
-
-#home-card-feature {
-    text-align: center;
 }
 
 #home-card-feature img{
@@ -172,12 +144,6 @@ main.container {
 #home-card-feature a:hover {
     color: #ff6d00;
 }
-
-/* Bio card  */
-/* #bio-card-feature img{
-    width: 100%;
-    aspect-ratio: 87 / 128;
-} */
 
 /* aside section  */
 aside.book-list {
@@ -278,7 +244,7 @@ footer ul#social-networks a {
 /* Media Queries */
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
- 
+
     #home-card-feature.home-order {
         order: -1;
     }
@@ -303,14 +269,16 @@ footer ul#social-networks a {
     }
         
     .feature-intro {
-        padding: 20px;
+        padding: 0 20px 20px 20px;
     }
             
     #quotes {
         border-width: 2px 0;
         border-style: dotted;
         padding: 10px;
-        margin: 10px;
+        margin: 10px 20px 0 20px;
+        background-color:#fff;
+        border-radius: 10px;
     }
 
     h2, h3 {
