@@ -14,7 +14,7 @@ h2 {
     color: #000;
 }
 
-/* to create separate paragraphs of text */
+/* create separate paragraphs of text */
 p {
     margin: 10px 0;
 }
@@ -85,11 +85,11 @@ header {
     padding: 1px 15px;
 }
 
-main.home-container {
+main.container {
     height: 100%;
 }
 
- /* Home Hero image */
+ /* Hero image */
 #hero-image {
     min-width: 100vw;
     aspect-ratio: 285/211;
@@ -107,6 +107,29 @@ main.home-container {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/* figure*/
+#card-feature img {
+    width: 100%;
+    aspect-ratio: 256 / 389;
+}
+
+/* Bio card  */
+#quotes {
+    text-align: center;
+}
+
+.feature-intro a {
+    color: #000;
+}
+
+#feature-heading {
+    margin: 10px;
+}
+
+.feature-intro a {
+    color: #000;
 }
 
 /* home card  */
@@ -151,36 +174,10 @@ main.home-container {
     color: #ff6d00;
 }
 
-#feature-heading {
-    margin: 10px;
-}
-
-#quotes {
-    text-align: center;
-}
-
-.feature-intro a {
-    color: #000;
-}
-
 /* Bio card  */
-main.bio-container {
-    height: 100%;
-    display: flex;
-}
-
-#bio-card-feature {
-    margin: 5px;
-    padding: 5px;
-}
-
 #bio-card-feature img{
     width: 100%;
     aspect-ratio: 87 / 128;
-}
-
-.bio-intro a {
-    color: #000;
 }
 
 /* aside section  */
@@ -199,45 +196,30 @@ aside.book-list ul {
 }
 
 aside.book-list ul li {
-    color: #2e7d32 3px
-}
-
-/* books card  */
-main.books-container {
-    height: 100%;
-    display: flex;
-}
-
-#books-card-feature {
-    margin: 5px;
-    padding: 5px;
-}
-
-#books-card-feature img{
-    width: 100%;
-    aspect-ratio: 87 / 128;
+    color: #2e7d32 
 }
 
 /* contact card  */
 #contact-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
     margin-bottom: 40px;
 }
 
 #contact-card-feature {
     text-align: center;
-    margin: 5px;
-    padding: 5px;
 }
 
 #contact-card-feature img{
+    display: block;
     width: 100%;
     aspect-ratio: 285/211;
     text-align: center;
 }
+    
+#contact-card-feature figcaption {
+    background: #f5f5f5;
+    padding: 10px;
+}
+    
 
 /* Footer */
 footer {
@@ -296,11 +278,9 @@ footer ul#social-networks a {
 }
 
 /* Media Queries */
-/* tablet and desktop size screens */
-
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
-
+ 
     #home-card-feature.home-order {
         order: -1;
     }
@@ -312,11 +292,31 @@ footer ul#social-networks a {
         display: none;
     }
 
+    /* figure and figcaption */
+    #card-feature img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 256 / 389;
+        /* margin: 0 0 5px 0;  */
+    }
+        
+    figcaption {
+        background: #f5f5f5;
+        padding: 10px;
+    }
+        
+    .feature-intro {
+        padding: 20px;
+    }
+            
     #quotes {
         border-width: 2px 0;
         border-style: dotted;
         padding: 10px;
+        margin: 10px;
     }
+
+
 
     h2, h3 {
         text-align: center;
@@ -327,6 +327,7 @@ footer ul#social-networks a {
     }
 }
 
+/* tablet and desktop size screens */
 @media (min-width: 560px) {
 
     /* header */
@@ -420,7 +421,7 @@ footer ul#social-networks a {
         height: 100%;
     }
 
-    #bio-card {
+    #card {
         display: flex;
         flex-direction: row;
         width: 70%;
@@ -431,15 +432,10 @@ footer ul#social-networks a {
         border-radius: 10px;
     }
 
-    #bio-card-feature {
+    #card-feature {
         width: 50%;
         margin: 10px;
         border-radius: 10px; 
-    }
-
-    #bio-card-feature img {
-        width: 100%;
-        aspect-ratio: 256 / 389;
     }
 
     aside.book-list {
@@ -461,34 +457,9 @@ footer ul#social-networks a {
     }
 
      /* Books card  */
-     main.books-container {
-        height: 100%;
-    }
-    
-    #books-card {
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        position: relative;
-        margin: 40px auto ;
-        background-color: rgb(245,245,245);
-        border: 2px solid rgb(220,220,220);
-        border-radius: 10px;
-    }
-
-    #books-card-feature {
-        width: 50%;
-        margin: 10px;
-        border-radius: 10px; 
-    }
-
     #books-card-feature img {
         width: 100%;
         aspect-ratio: 87 / 128;
-    }
-
-    .books-intro-link a:hover {
-        text-decoration: underline #ff6d00 4px;
     }
 
     /* contact hero image */
@@ -518,6 +489,17 @@ footer ul#social-networks a {
         width: 100%;
         margin: 10px;
         border-radius: 10px;
+    }
+
+    #contact-card-feature img{
+        width: 100%;
+        aspect-ratio: 285/211;
+        text-align: center;
+    }
+        
+    #contact-card-feature figcaption {
+        background: none;
+        padding: 0;
     }
 
     /* footer */
