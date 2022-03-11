@@ -95,8 +95,12 @@ main.container {
     aspect-ratio: 256 / 389;
 }
 
-/* Bio card  */
 #quotes {
+    border-width: 2px 0;
+    border-style: dotted;
+    padding: 10px;
+    margin: 10px 20px 0 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -270,15 +274,7 @@ footer ul#social-networks a {
         
     .feature-intro {
         padding: 0 20px 20px 20px;
-    }
-            
-    #quotes {
-        border-width: 2px 0;
-        border-style: dotted;
-        padding: 10px;
-        margin: 10px 20px 0 20px;
-        background-color:#fff;
-        border-radius: 10px;
+        margin-top: 40px;
     }
 
     h2, h3 {
@@ -361,6 +357,14 @@ footer ul#social-networks a {
         padding: 2em;
         text-align: center;
     }
+
+    .feature-intro {
+        margin-top: 20px;
+    }
+
+    .feature-intro h2 {
+        text-align: center;
+    }
     
     /* home card  */
     #home-card {
@@ -377,7 +381,7 @@ footer ul#social-networks a {
         margin: 10px;
         border-radius: 10px;
         background: rgb(238, 238, 238);
-        padding: 5px;
+        padding: 10px;
     }
 
     /* Bio card  */
