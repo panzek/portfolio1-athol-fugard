@@ -112,6 +112,22 @@ main.container {
     margin: 10px;
 }
 
+fieldset {
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+fieldset#required span {
+    color: red;
+}
+
 /* home card  */
 #home-card {
     display: flex;
