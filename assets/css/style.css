@@ -52,6 +52,10 @@ header {
     z-index: 1;
 }
 
+hear h2 {
+    text-align: center;
+}
+
 /* logo */
 #logo {
     color: #000;
@@ -193,7 +197,7 @@ aside.book-list ul li {
     text-align: center;
 }
 
-#contact-card-feature img{
+#contact-card-feature img {
     display: block;
     width: 100%;
     aspect-ratio: 285/211;
@@ -386,7 +390,7 @@ footer ul#social-networks a {
     #home-card {
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width: 100%;
         position: relative;
         margin: auto;
         margin-top: 22%;
@@ -449,8 +453,8 @@ footer ul#social-networks a {
     /* contact hero image */
     #contact-hero-image {
         min-width: 100vw;
-        aspect-ratio: 3/1;
-        background: #000 url('../images/hero-image.webp') center center/cover no-repeat;
+        aspect-ratio: 16/8;
+        background: #000 url('../images/fugard-hero-image.webp') center center/cover no-repeat;
         margin-top: 0;
         position: absolute;
     }
