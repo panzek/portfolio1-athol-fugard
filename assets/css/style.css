@@ -212,45 +212,43 @@ aside.book-list ul li {
 /* gallery  */
 #gallery-header {
     background: #000 url('../images/athol_fugard.webp') center center/cover no-repeat;
-    text-align: center;
+    background-blend-mode:luminosity;
     width: 100%;
-    padding: 200px 0;
-}
-
-#gallery-header img {
-    width: auto;
-    max-width: 100%;
-    border-radius: 10px;
+    padding: 150px 0;
+    position: relative;
 }
 
 #gallery-header h1 {
-    text-align: center;
-    color: green;
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+    /* text-align: center; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #f5f5f5;
+    padding: 20px 40px;
+    border-radius: 10px;
 }
 
 #gallery {
-    columns: 1 350px;
-    margin: 20px;
-    background-color: #e5e5e5;
+    columns: 2 150px;
+    column-gap: 0;
+    line-height: 0;
+    margin-bottom: 50px;
 }
 
 #gallery #book-gallery {
     width: 100%;
-    padding: 20px;
     margin-bottom: 30px;
 }
 
 #gallery #book-gallery img {
-    width: auto;
-    max-width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 10px 10px #000;
-}
-
-#gallery #book-gallery p {
-    text-align: center;
+    width: 100%;
+    padding: 5px;
 }
 
 /* Footer */
@@ -540,9 +538,7 @@ footer ul#social-networks a {
 
     /* gallery */
     #gallery {
-        columns: 3 350px;
-        margin: 20px;
-        background-color: #e5e5e5;
+        columns: 5 350px;
     }
 
     /* footer */
