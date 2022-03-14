@@ -103,6 +103,10 @@ main {
     aspect-ratio: 256 / 389;
 }
 
+#card-feature .order {
+    order: -1;
+}
+
 #quotes {
     border-width: 2px 0;
     border-style: dotted;
@@ -307,7 +311,7 @@ footer {
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
 
-    #home-card-feature .home-order {
+    #home-card-feature .order {
         order: -1;
     }
 
