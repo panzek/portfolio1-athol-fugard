@@ -250,7 +250,7 @@ footer {
     border: none;
 }
 
-.signup-btn {
+#footer .signup-btn {
     background-color: #000;
     color:rgb(238, 238, 238);
     cursor: pointer;
