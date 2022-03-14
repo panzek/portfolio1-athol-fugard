@@ -90,6 +90,13 @@ main {
     height: 100%;
 }
 
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 /* figure*/
 #card-feature img {
     width: 100%;
@@ -103,6 +110,14 @@ main {
     margin: 10px 20px 0 20px;
     border-radius: 10px;
     text-align: center;
+}
+
+#bio-figure {
+    margin-top: 10px;
+}
+
+#bio-figure img {
+    border-radius: 10px;
 }
 
 .feature-intro a {
@@ -155,7 +170,7 @@ legend {
     width: 100%;
     margin: 20px 0 20px 0;
     padding: 10px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
     background-color:antiquewhite;
     text-align: center;
 }
@@ -435,7 +450,8 @@ footer {
     #card {
         display: flex;
         flex-direction: row;
-        width: 70%;
+        align-items: flex-start;
+        width: 80%;
         position: relative;
         margin: 40px auto ;
         background-color: rgb(245,245,245);
@@ -444,13 +460,9 @@ footer {
     }
 
     #card-feature {
-        width: 50%;
+        width: 100%;
         margin: 10px;
         border-radius: 10px; 
-    }
-
-    #book-list {
-        width: 30%;
     }
 
      /* Books page*/
