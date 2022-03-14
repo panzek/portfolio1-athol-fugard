@@ -46,14 +46,10 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-    background-color: #ff6d00;
+    background-color: #F60;
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-hear h2 {
-    text-align: center;
 }
 
 /* logo */
@@ -62,6 +58,7 @@ hear h2 {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin: 20px;
 }
 
 .navbar ul {
@@ -89,7 +86,7 @@ hear h2 {
     padding: 1px 15px;
 }
 
-main.container {
+main {
     height: 100%;
 }
 
@@ -128,8 +125,8 @@ legend {
     border-radius: 10px;
 }
 
-fieldset#required span {
-    color: red;
+#required span {
+    color: #f60;
 }
 
 /* home card  */
@@ -140,37 +137,21 @@ fieldset#required span {
     gap: 1rem;
 }
 
-#home-card-feature img{
+#home-card-feature img {
     display: block;
     width: 100%;
     aspect-ratio: 285/211;
     text-align: center;
 }
 
-#home-card-feature.books-img{
+#home-card-feature.books-img {
     width: 100%;
     aspect-ratio: 1302/1361;
     text-align: center;
 }
 
-.home-card-feature i {
-    width: 50%;
-    aspect-ratio: 1/1;
-    text-align: center;
-    border-radius: 80px;
-}
-
-#home-card-feature a {
-    color: #2e7d32;
-    background-color: #f9f9f9;
-}
-
-#home-card-feature a:hover {
-    color: #ff6d00;
-}
-
 /* aside section  */
-aside.book-list {
+#book-list {
     width: 100%;
     margin: 20px 0 20px 0;
     padding: 10px;
@@ -179,12 +160,12 @@ aside.book-list {
     text-align: center;
 }
 
-aside.book-list ul {
+#book-list ul {
     list-style: square inside;
     margin: 10px;
 }
 
-aside.book-list ul li {
+#book-list ul li {
     color: #2e7d32 
 }
 
@@ -222,7 +203,6 @@ aside.book-list ul li {
     position: absolute;
     display: inline-block;
     width: 250px;
-    /* text-align: center; */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -260,11 +240,12 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto;
-    background-color: #ff6d00;
+    background-color: #f60;
     padding: 20px 0;
 }
 
-footer input[type="email"], .signup-btn {
+#footer input[type="email"], 
+.signup-btn {
     padding: 0.5em;
     border: none;
 }
@@ -276,32 +257,32 @@ footer input[type="email"], .signup-btn {
     margin-bottom: 5px;
 }
 
-footer .copyrights {
+#footer .copyrights {
     text-align: center;
     margin: 10px;
 }
 
-footer .copyrights #copyrights-socials {
+#footer .copyrights #copyrights-socials {
     padding: 5px 0 0 0;
     margin: 0 auto;
 }
 
-footer .copyrights #copyrights-socials a {
+#footer .copyrights #copyrights-socials a {
     color: #000;
 }
 
-footer ul#social-networks {
+#footer #social-networks {
     text-align: center;
     margin: 10px;
 }
 
-footer ul#social-networks li {
+#footer #social-networks li {
     display: inline-block;
     text-align: center;
     width: 100px;
 }
 
-footer ul#social-networks a {
+#footer #social-networks a {
     display: block;
     text-decoration: none;
     color: #000;
@@ -311,7 +292,7 @@ footer ul#social-networks a {
 /* medium screen sizes - 560px wide and down */
 @media (max-width: 560px) {
 
-    #home-card-feature.home-order {
+    #home-card-feature .home-order {
         order: -1;
     }
 
@@ -339,7 +320,8 @@ footer ul#social-networks a {
         margin-top: 40px;
     }
 
-    h2, h3 {
+    h2, 
+    h3 {
         text-align: center;
     }
 
@@ -364,12 +346,7 @@ footer ul#social-networks a {
         background-color: #fff;
         padding: 0 20px;
     }
-
-    div#logo {
-        margin: 30px;
-        text-align: center;
-    }
-    
+ 
     /* navigation bar */
     .navbar ul {
         text-align: center;
@@ -389,7 +366,7 @@ footer ul#social-networks a {
     }
     
     .navbar li.active > a {
-        background-color: #ff6d00;
+        background-color: #f60;
         color: inherit;
         border-radius: 0;
     }
@@ -399,11 +376,11 @@ footer ul#social-networks a {
     }
     
     .navbar li:not(.active):hover {
-        text-decoration: underline #ff6d00 4px;
+        text-decoration: underline #f60 4px;
     }
 
     .feature-intro a:hover {
-        text-decoration: underline #ff6d00 4px;
+        text-decoration: underline #f60 4px;
     }
 
     /* Hero image */
@@ -446,15 +423,15 @@ footer ul#social-networks a {
         width: 50%;
         margin: 10px;
         border-radius: 10px;
-        background: rgb(238, 238, 238);
+        background: rgb(245,245,245);
         padding: 10px;
     }
 
-    /* Bio card  */
-    main.bio-container {
-        height: 100%;
+    #home-card-feature a:hover {
+        color: #f60;
     }
 
+    /* Bio and books card  */
     #card {
         display: flex;
         flex-direction: row;
@@ -462,7 +439,7 @@ footer ul#social-networks a {
         position: relative;
         margin: 40px auto ;
         background-color: rgb(245,245,245);
-        border: 2px solid rgb(220,220,220);
+        border: 2px solid rgb(238, 238, 238);
         border-radius: 10px;
     }
 
@@ -472,25 +449,11 @@ footer ul#social-networks a {
         border-radius: 10px; 
     }
 
-    aside.book-list {
-        width: 250px;
-        margin: 20px 0 20px 0;
-        padding: 10px;
-        border-radius: 10px 0 0 10px;
-        background-color:antiquewhite;
-        text-align: center;
-    }
-    
-    aside.book-list ul {
-        list-style: square inside;
-        margin: 10px;
+    #book-list {
+        width: 30%;
     }
 
-    aside.book-list ul li {
-        color: #2e7d32 3px
-    }
-
-     /* Books card  */
+     /* Books page*/
     #books-card-feature img {
         width: 100%;
         aspect-ratio: 87 / 128;
@@ -515,7 +478,7 @@ footer ul#social-networks a {
         margin-top: 22%;
         margin-bottom: 40px;
         background-color:#fff;
-        border: 2px solid rgb(238, 238, 238);
+        border: 2px solid rgb(238, 238, 238); 
         border-radius: 10px;
     }
 
@@ -545,11 +508,7 @@ footer ul#social-networks a {
     footer {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         justify-content: space-between;
-        align-items: center;
-        margin-top: auto;
-        padding: 0 20px;
+        padding: 0 20px; 
     }
 }
