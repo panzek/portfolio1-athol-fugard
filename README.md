@@ -1,108 +1,74 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Athol Fugard
 
-Welcome Peter Anny-Nzekwue,
+Athol Fugard is the website of Athol Fugard, the South African playwright, novelist, actor, and director, who is widely regarded as South Africa's greatest, most influential, and world acclaimed foremost playwright. The goal of the website is to let older and younger readers who are interested in apartheid and post-apartheid South Africa and its literature to know more about Athol Fugard: his life, his protest theatre, and his significant contribution to the struggle of the oppressed black South Africans for freedom, a contribution that is made more pronounced by the fact that Fugard is white and had sacrificed this privileged position to side with and fight for the oppressed. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ [View Live Project Here]( https://panzek.github.io/portfolio1-athol-fugard/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## User Experience (UX)
+* User Stories
+    * First time visitor:
+    1. As a user, I want to see navigation menus so that I will be able to access the Homepage from any page.
+    2. As a first-time visitor, I want to see a contact page so that I will be able to send a message to make enquiries
+    3. As a first-time visitor, I want to be able to sign up to a mailing list so that I can receive news and announcements related to Athol Fugard.
+    4. As a first-time visitor, I want to see an Author biography page so that I can know more about Athol Fugard, the man regarded as the South Africa's greatest playwright.
+    5. As a first-time visitor, I want to see a book gallery page of Fugard’s titles so that I will be able to choose buy any of his books I may want to buy.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Design
+    * Color Scheme
+    1. Orange
+    2. Green
+    3. White
+        * The main color selected for this website is a tricolor of orange (code), green (code), and white (code). These colors a carefully selected for three reasons. First, to depict Athol Fugard’s heritage and identity. The colors selected are a tricolor of the national flag of Ireland. Fugard, though generally known as a South African, is by blood an Irish; his father was originally from Ireland. Second, the tricolor, just like the Irish flag, intends to also symbolise the “aspiration for unity between people of different colors and traditions” in South Africa, which is the concern of Fugard’s oeuvre. Third, the application of the tricolor to the website is for aesthetic nourishment: to make the website look beautiful in a way that it speaks to all visitors creatively. It is for this reason that the application of the three colors to the website, are not of equal size or in the same order as they are used on the Irish flag. Orange (code) is taken as the website’s main color and green and white are its secondary colours (black color whenever they are found on the website is treated as a default color). Thus, in terms of its third application, the tricolor holds no other meaning other than to please and to delight. 
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+    * Typography
+        1. Roboto
+        2. Sans-serif
+            * The main font used for the website is Roboto with sans-serif as the fallback. Friendly and straightforward in appearance, Roboto is a “neo-grotesque sans-serif typeface family. To keep things simple and clean, Roboto is the only font used throughout the website, but with varying sizes: bold 700 for headings and lower headings, and thin 100 for body text. The beauty of Roboto is that it is modern, contemporary, minimalistic, and highly readable and serves well for a writer’s website.
 
-Another blue button should appear to click: _Open Browser_.
+    * Imagery
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Wireframes
 
-A blue button should appear to click: _Make Public_,
+## Features
+* Existing Features 
+    * Navigation Bar
+        * Featured on all four pages, the full responsive navigation bar includes links to the Logo, which is align on the far left and Home page, Bio, Gallery and Contact page, on the far right hand side. The logo is a fontawesome user-pen icon carefully chosen to represent a writer.
+        * This section is identical in each page to allow for easy navigation. The “Home”, “Bio”, “Gallery”, and “Contact” links let the reader easily navigates the website without having to use the “back” arrow in the browser to return to the homepage.
 
-Another blue button should appear to click: _Open Browser_.
+## Technologies Used
+* Languages Used 
+    * HTML5 
+    * CSS3
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Frameworks, Libraries & Programs Used
+    i.Google Fonts 
+    ii. Font Awesome 
+    iii. Git 
+    iv. GitHub
 
-To log into the Heroku toolbelt CLI:
+## Testing
+* Validator Testing
+    * website tested on W3C Markup Validator and W3C CSS Validation Service 
+    
+* Accessibility Testing
+    * tested on Lighthouse to test accessibility.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment 
+* The website was deployed using GitHub Pages. The following steps were taken for the deployment process:
+    1. Log in to  [GitHub Pages](https://pages.github.com/).
+    2. Click on the profile icon to locate **'Your repositories'**.
+    3. On the repository page, click on the repository you wish to deploy.
+    4. At the top of the repository, locate the **'Settings'** link and click.
+    5. On the Settings page, locate the **'Pages'** section in the left-hand navigation section and click.
+    6. On the GitHub Pages page, under **'Source'** click **'Main'** then click **'Save'**.
+    7. Refresh the page and the live link is ready in a few minutes.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+ [View Live Project Here]( https://panzek.github.io/portfolio1-athol-fugard/)
 
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Credits
+* Code 
+* Content 
+* Media 
+* Acknowledgements
