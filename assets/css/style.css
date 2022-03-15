@@ -163,9 +163,9 @@ legend {
     text-align: center;
 }
 
-#home-card-feature.books-img {
+#home-card-feature .books-img {
     width: 100%;
-    aspect-ratio: 1302/1361;
+    aspect-ratio: 1099 / 828;
     text-align: center;
 }
 
