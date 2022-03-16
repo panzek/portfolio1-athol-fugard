@@ -22,9 +22,9 @@ p {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    font-size: 16px;
     font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    min-height: 100%;
 }
 
 :root {
@@ -40,25 +40,25 @@ body {
 
 /* header and navigation bar */
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
     background-color: #F60;
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: nowrap;
+    justify-content: space-between;    
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1;
 }
 
 /* logo */
 #logo {
     color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 4px;
     margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navbar ul {
@@ -75,8 +75,8 @@ header {
 }
 
 .navbar a {
-    text-decoration: none;
     color: #000;
+    text-decoration: none;
 }
 
 .navbar li.active > a {
@@ -91,16 +91,16 @@ main {
 }
 
 #card {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
 /* figure*/
 #card-feature img {
-    width: 100%;
     aspect-ratio: 256 / 389;
+    width: 100%;
 }
 
 #card-feature .order {
@@ -108,11 +108,11 @@ main {
 }
 
 #quotes {
-    border-width: 2px 0;
-    border-style: dotted;
-    padding: 10px;
-    margin: 10px 20px 0 20px;
     border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px 0;
+    margin: 10px 20px 0 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -133,15 +133,15 @@ main {
 }
 
 fieldset {
-    padding: 20px 0;
     border-radius: 0 0 10px 10px;
+    padding: 20px 0;
 }
 
 legend {
     background-color: #000;
+    border-radius: 10px;
     color: #fff;
     padding: 5px 20px;
-    border-radius: 10px;
 }
 
 #required span {
@@ -152,31 +152,31 @@ legend {
 #home-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
+    justify-content: center;
 }
 
 #home-card-feature img {
-    display: block;
-    width: 100%;
     aspect-ratio: 285/211;
+    display: block;
     text-align: center;
+    width: 100%;
 }
 
 #home-card-feature .books-img {
-    width: 100%;
     aspect-ratio: 1099 / 828;
     text-align: center;
+    width: 100%;
 }
 
 /* aside section  */
 #book-list {
-    width: 100%;
+    background-color:antiquewhite;
+    border-radius: 10px;
     margin: 20px 0 20px 0;
     padding: 10px;
-    border-radius: 10px;
-    background-color:antiquewhite;
     text-align: center;
+    width: 100%;
 }
 
 #book-list ul {
@@ -198,10 +198,10 @@ legend {
 }
 
 #contact-card-feature img {
-    display: block;
-    width: 100%;
     aspect-ratio: 285/211;
+    display: block;
     text-align: center;
+    width: 100%;
 }
     
 #contact-card-feature figcaption {
@@ -213,24 +213,24 @@ legend {
 #gallery-header {
     background: #000 url('../images/athol_fugard.webp') center center/cover no-repeat;
     background-blend-mode:luminosity;
-    width: 100%;
     padding: 150px 0;
     position: relative;
+    width: 100%;
 }
 
 #gallery-header h1 {
-    position: absolute;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    color: #000;
     display: inline-block;
-    width: 250px;
     left: 50%;
+    margin-left: 20px;
+    padding: 20px 40px;
+    position: absolute;
+    text-transform: uppercase;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin-left: 20px;
-    color: #000;
-    text-transform: uppercase;
-    background-color: #f5f5f5;
-    padding: 20px 40px;
-    border-radius: 10px;
+    width: 250px;  
 }
 
 #gallery {
@@ -241,32 +241,32 @@ legend {
 }
 
 #gallery #book-gallery {
-    width: 100%;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 #gallery #book-gallery img {
-    width: 100%;
     padding: 5px;
+    width: 100%;
 }
 
 /* Footer */
 footer {
+    align-items: center;
+    background-color: #f60;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: auto;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto;
-    background-color: #f60;
-    padding: 20px 0;
 }
 
 #footer input[type="email"], 
 .signup-btn {
-    padding: 0.5em;
     border: none;
+    padding: 0.5em;
 }
 
 #footer .signup-btn {
@@ -277,13 +277,13 @@ footer {
 }
 
 #footer .copyrights {
-    text-align: center;
     margin: 10px;
+    text-align: center;
 }
 
 #footer .copyrights #copyrights-socials {
-    padding: 5px 0 0 0;
     margin: 0 auto;
+    padding: 5px 0 0 0;
 }
 
 #footer .copyrights #copyrights-socials a {
@@ -291,8 +291,8 @@ footer {
 }
 
 #footer #social-networks {
-    text-align: center;
     margin: 10px;
+    text-align: center;
 }
 
 #footer #social-networks li {
@@ -302,9 +302,9 @@ footer {
 }
 
 #footer #social-networks a {
+    color: #000;
     display: block;
     text-decoration: none;
-    color: #000;
 }
 
 /* Media Queries */
@@ -324,9 +324,9 @@ footer {
 
     /* use display block to get more control over spacing to remove space between image and figcaption */
     #card-feature img {
+        aspect-ratio: 256 / 389;
         display: block;
         width: 100%;
-        aspect-ratio: 256 / 389;
     }
         
     figcaption {
@@ -358,18 +358,18 @@ footer {
 
     /* header */
     header {
+        align-items: center;
+        background-color: #fff;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
         padding: 0 20px;
     }
  
     /* navigation bar */
     .navbar ul {
-        text-align: center;
         margin: 0 !important;
+        text-align: center;
     }
     
     .navbar li {
@@ -379,15 +379,15 @@ footer {
     }
     
     .navbar a {
-        display: block;
-        text-decoration: none;
         color: inherit;
+        display: block;
+        text-decoration: none; 
     }
     
     .navbar li.active > a {
         background-color: #f60;
-        color: inherit;
         border-radius: 0;
+        color: inherit;
     }
     
     .navbar a:hover {
@@ -404,20 +404,20 @@ footer {
 
     /* Hero image */
     #hero-image {
-        min-width: 100vw;
         aspect-ratio: 3/1;
         background: #000 url('../images/hero-image.webp') center center/cover no-repeat;
         margin-top: 0;
+        min-width: 100vw;
         position: absolute;
     }
     
     .hero-image-text {
-        width: 250px;
         color: #e5e5e5;
-        margin: auto;
         font-size: 1em;
+        margin: auto;
         padding: 2em;
         text-align: center;
+        width: 250px;
     }
 
     .feature-intro {
@@ -456,62 +456,63 @@ footer {
 
     /* Bio and books card  */
     #card {
-        display: flex;
-        flex-direction: row;
         align-items: flex-start;
-        width: 80%;
-        position: relative;
-        margin: 40px auto ;
         background-color: rgb(245,245,245);
         border: 2px solid rgb(238, 238, 238);
         border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin: 40px auto ;
+        position: relative;
+        width: 80%;
+        
     }
 
     #card-feature {
-        width: 100%;
-        margin: 10px;
         border-radius: 10px; 
+        margin: 10px;
+        width: 100%;
     }
 
      /* Books page*/
     #books-card-feature img {
-        width: 100%;
         aspect-ratio: 87 / 128;
+        width: 100%;
     }
 
     /* contact hero image */
     #contact-hero-image {
-        min-width: 100vw;
         aspect-ratio: 16/8;
         background: #000 url('../images/fugard-hero-image.webp') center center/cover no-repeat;
         margin-top: 0;
+        min-width: 100vw;
         position: absolute;
     }
 
     /* contact card  */
     #contact-card {
+        background-color:#fff;
+        border: 2px solid rgb(238, 238, 238); 
+        border-radius: 10px;
         display: flex;
         flex-direction: row;
-        width: 50%;
         position: relative;
         margin: auto;
         margin-top: 22%;
         margin-bottom: 40px;
-        background-color:#fff;
-        border: 2px solid rgb(238, 238, 238); 
-        border-radius: 10px;
+        width: 50%;
     }
 
     #contact-card-feature {
-        width: 100%;
-        margin: 10px;
         border-radius: 10px;
+        margin: 10px;
+        width: 100%;
     }
 
     #contact-card-feature img{
-        width: 100%;
         aspect-ratio: 285/211;
         text-align: center;
+        width: 100%;
     }
         
     #contact-card-feature figcaption {
