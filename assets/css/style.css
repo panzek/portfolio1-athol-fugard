@@ -308,6 +308,20 @@ footer {
 
 /* Media Queries */
 /* medium screen sizes - 560px wide and down */
+
+@media (max-width: 280px) {
+
+    #logo h1 {
+        font-size: 1.5em;
+    }
+
+    #gallery-header h1 {
+        left: 50%;
+        top: 70%;
+        margin: 0;
+    }
+}
+
 @media (max-width: 560px) {
 
     #home-card-feature .order {
