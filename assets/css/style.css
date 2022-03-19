@@ -115,14 +115,56 @@ main {
     text-align: center;
 }
 
-#bio-figure {
-    margin-top: 10px;
+/* contact form */
+.contact-form {
+    background-color: #e8f5e9;
 }
 
-#bio-figure img {
+input[type=text], 
+.contact-form input[type=email],
+textarea {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 60%;
+}
+
+input[type=text]:focus, 
+.contact-form input[type=email]:focus,
+textarea:focus {
+    border: 1px solid #f60;
+    outline: none;
+}
+
+.contact-btn {
+    background-color: #f60;
+    border: none;
     border-radius: 10px;
+    padding: 5px 30px;
 }
 
+fieldset {
+    border: 1px solid;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+
+legend {
+    padding: 3px 10px;
+}
+
+#required span {
+    color: #f60;
+}
+
+.reset-btn {
+    background-color: #fff;
+    border: 1px solid #2e7d32;
+    border-radius: 10px;
+    padding: 4px 30px;
+}
+
+/* card feature  */
 .feature-intro a {
     color: #000;
 }
@@ -131,20 +173,12 @@ main {
     margin: 10px;
 }
 
-fieldset {
-    border-radius: 0 0 10px 10px;
-    padding: 20px 0;
+#bio-figure {
+    margin-top: 10px;
 }
 
-legend {
-    background-color: #000;
+#bio-figure img {
     border-radius: 10px;
-    color: #fff;
-    padding: 5px 20px;
-}
-
-#required span {
-    color: #f60;
 }
 
 /* home card  */
@@ -278,45 +312,45 @@ footer {
     width: 100%;
 }
 
-#footer input[type="email"], 
+input[type="email"], 
 .signup-btn {
     border: none;
     padding: 0.5em;
 }
 
-#footer .signup-btn {
+.signup-btn {
     background-color: #000;
     color:rgb(238, 238, 238);
     cursor: pointer;
     margin-bottom: 5px;
 }
 
-#footer .copyrights {
+.copyrights {
     margin: 10px;
     text-align: center;
 }
 
-#footer .copyrights #copyrights-socials {
+#copyrights-socials {
     margin: 0 auto;
     padding: 5px 0 0 0;
 }
 
-#footer .copyrights #copyrights-socials a {
+#copyrights-socials a {
     color: #000;
 }
 
-#footer #social-networks {
+#social-networks {
     margin: 10px;
     text-align: center;
 }
 
-#footer #social-networks li {
+#social-networks li {
     display: inline-block;
     text-align: center;
     width: 100px;
 }
 
-#footer #social-networks a {
+#social-networks a {
     color: #000;
     display: block;
     text-decoration: none;
@@ -559,6 +593,15 @@ footer {
     #contact-card-feature figcaption {
         background: none;
         padding: 0;
+    }
+
+    /* contact form */
+    .contact-form {
+        background-color: #fff;
+    }
+
+    legend {
+        align-content: flex-start;
     }
 
     /* gallery */
