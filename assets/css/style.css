@@ -258,43 +258,34 @@ aside button:hover {
     padding: 10px;
 }
 
-/* gallery  */
-#gallery-header {
-    background: #000 url('../images/athol_fugard.webp') center center/cover no-repeat;
-    background-blend-mode:luminosity;
-    padding: 150px 0;
-    position: relative;
-    width: 100%;
-}
-
-#gallery-header h1 {
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    color: #000;
-    display: inline-block;
-    left: 50%;
-    margin-left: 20px;
-    padding: 20px 40px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;  
-}
-
+/* gallery */
 #gallery {
-    columns: 2 150px;
+    columns: 1 150px;
     column-gap: 0;
     line-height: 0;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
-#gallery #book-gallery {
+#gallery-header h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+    margin: 5px;
+    padding-top: 40px;
+    text-decoration: underline #f60;
+    text-transform: uppercase;
+    text-underline-position: under;
+    width: 100%;  
+}
+
+#book-gallery {
     margin-bottom: 30px;
     width: 100%;
 }
 
-#gallery #book-gallery img {
+#book-gallery img {
     padding: 5px;
     width: 100%;
 }
@@ -411,9 +402,6 @@ input[type="email"],
         text-align: left;
     }
 
-    #gallery-header img {
-        display: none;
-    }
 }
 
 /* tablet and desktop size screens */
