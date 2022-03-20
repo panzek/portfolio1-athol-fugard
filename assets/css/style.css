@@ -121,7 +121,7 @@ main {
 } */
 
 input[type=text], 
-.contact-form input[type=email],
+.contact-email input[type=email],
 textarea {
     border: 1px solid;
     border-radius: 5px;
@@ -130,7 +130,7 @@ textarea {
 }
 
 input[type=text]:focus, 
-.contact-form input[type=email]:focus,
+.contact-email input[type=email]:focus,
 textarea:focus {
     border: 1px solid #f60;
     outline: none;
