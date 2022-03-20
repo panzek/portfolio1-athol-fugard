@@ -391,7 +391,7 @@ input[type="email"],
         width: 100%;
     }
     
-    #home-card figcaption {
+    #home-card-feature figcaption {
         display: none;
     }
 
