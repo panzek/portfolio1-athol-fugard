@@ -356,6 +356,9 @@ input[type="email"],
 .copyrights {
     margin: 10px;
     text-align: center;
+    background-color: rgb(232, 245, 233, 0.1);
+    padding: 0 20px;
+    border-radius: 5px;
 }
 
 #copyrights-socials {
