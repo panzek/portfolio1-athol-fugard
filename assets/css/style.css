@@ -89,11 +89,37 @@ main {
     height: 100%;
 }
 
+/* card feature  */
 #card {
     align-items: center;
+    background-color: rgb(241, 248, 233);
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
     width: 100%;
+}
+
+#card-feature {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.feature-intro {
+    background-color: #fff;
+    padding: 0 5px;
+    margin: 10px 5px;
+
+}
+
+.feature-intro a {
+    color: #000;
+}
+
+#feature-heading {
+    margin: 10px;
 }
 
 /* figure*/
@@ -161,14 +187,7 @@ legend {
     padding: 4px 30px;
 }
 
-/* card feature  */
-.feature-intro a {
-    color: #000;
-}
-
-#feature-heading {
-    margin: 10px;
-}
+/* bio card */
 
 #bio-figure {
     margin-top: 10px;
@@ -400,10 +419,10 @@ input[type="email"],
         padding: 10px;
     }
         
-    .feature-intro {
+    /* .feature-intro {
         padding: 0 10px;
         margin-top: 10px;
-    }
+    } */
 
     h2, 
     h3 {
@@ -439,7 +458,6 @@ input[type="email"],
         margin: 0;
         width: 385px;
         height: 50px;
-
     }
     
     .navbar li {
@@ -536,8 +554,8 @@ input[type="email"],
     /* Bio and books card  */
     #card {
         align-items: flex-start;
-        background-color: rgb(245,245,245);
-        border: 2px solid rgb(238, 238, 238);
+        background-color: #fff;
+        border: 2px solid rgb(241, 248, 233);
         border-radius: 10px;
         display: flex;
         flex-direction: row;
@@ -550,6 +568,11 @@ input[type="email"],
         border-radius: 10px; 
         margin: 10px;
         width: 100%;
+    }
+
+      .feature-intro {
+        padding: 0 2px;
+        margin: 5px 0;
     }
 
      /* Books page*/
