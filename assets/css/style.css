@@ -229,7 +229,7 @@ legend {
     width: 100%;
 }
 
-/* aside section  */
+/* books page */
 aside button {
     background-color: #f60;
     border: none;
@@ -264,28 +264,17 @@ aside button:hover {
     color: #2e7d32 
 }
 
-/* contact card  */
-#contact-card {
-    margin-bottom: 40px;
-}
-
-#contact-card-feature {
-    text-align: center;
-}
-
-#contact-card-feature img {
-    aspect-ratio: 285/211;
-    display: block;
-    text-align: center;
-    width: 100%;
-}
-    
-#contact-card-feature figcaption {
-    background: #f5f5f5;
+.book-quote {
+    background-color: rgb(232, 245, 233, 0.2);
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px 0;
+    margin: 20px auto;
     padding: 10px;
+    text-align: center;
+    width: 80%;
 }
 
-/* gallery */
 #gallery {
     columns: 1 150px;
     column-gap: 0;
@@ -315,6 +304,27 @@ aside button:hover {
 #book-gallery img {
     padding: 5px;
     width: 100%;
+}
+
+/* contact card  */
+#contact-card {
+    margin-bottom: 40px;
+}
+
+#contact-card-feature {
+    text-align: center;
+}
+
+#contact-card-feature img {
+    aspect-ratio: 285/211;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+    
+#contact-card-feature figcaption {
+    background: #f5f5f5;
+    padding: 10px;
 }
 
 /* Footer */
@@ -516,10 +526,6 @@ input[type="email"],
     .feature-intro h2 {
         text-align: center;
     }
-    
-    #quotes {
-        margin: 0 20px 5px 20px;
-    }
 
     /* home card  */
     #home-card {
@@ -579,6 +585,14 @@ input[type="email"],
     #books-card-feature img {
         aspect-ratio: 87 / 128;
         width: 100%;
+    }
+
+    .book-quote {
+        width: 20%;
+    }
+
+    .book-quote:hover {
+        background-color: rgb(232, 245, 233, 0);
     }
 
     /* contact hero image */
