@@ -116,6 +116,7 @@ main {
 
 .feature-intro a {
     color: #000;
+    text-transform: uppercase;
 }
 
 #feature-heading {
