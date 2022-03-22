@@ -400,6 +400,16 @@ input[type="email"],
         top: 70%;
         margin: 0;
     }
+
+    .navbar ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar li.active > a {
+        padding: 1px 3px;
+    }
+    
 }
 
 @media (max-width: 560px) {
