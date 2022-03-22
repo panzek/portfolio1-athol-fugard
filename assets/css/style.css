@@ -134,9 +134,10 @@ main {
 #quotes {
     border-radius: 10px;
     border-style: dotted;
-    border-width: 2px 0;
-    margin: 10px 20px 5px 20px;
-    padding: 5px;
+    border-width: 1px 0;
+    /* margin: 10px 20px 5px 20px; */
+    margin: 11px auto;
+    padding: 6px;
     text-align: center;
 }
 
@@ -515,9 +516,9 @@ input[type="email"],
         width: 250px;
     }
 
-    .feature-intro {
+    /* .feature-intro {
         margin-top: 20px;
-    }
+    } */
 
     .feature-intro h2 {
         text-align: center;
@@ -573,8 +574,8 @@ input[type="email"],
     }
 
       .feature-intro {
-        padding: 0 2px;
-        margin: 5px 0;
+        /* padding: 0 2px; */
+        margin: 4px 0;
     }
 
      /* Books page*/
