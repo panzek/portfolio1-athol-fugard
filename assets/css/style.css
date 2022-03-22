@@ -131,73 +131,7 @@ main {
     order: -1;
 }
 
-#quotes {
-    border-radius: 10px;
-    border-style: dotted;
-    border-width: 1px 0;
-    /* margin: 10px 20px 5px 20px; */
-    margin: 11px auto;
-    padding: 6px;
-    text-align: center;
-}
-
-/* contact form */
-input[type=text], 
-.contact-email input[type=email],
-textarea {
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 0.5em;
-    width: 60%;
-}
-
-input[type=text]:focus, 
-.contact-email input[type=email]:focus,
-textarea:focus {
-    border: 1px solid #f60;
-    outline: none;
-}
-
-.contact-btn {
-    background-color: #f60;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 30px;
-}
-
-fieldset {
-    background-color: #e8f5e9;
-    border: .1em solid #363;
-    border-radius: 0 0 10px 10px;
-    padding-bottom: 20px;
-}
-
-legend {
-    padding: 3px 10px;
-}
-
-#required span {
-    color: #C30;
-}
-
-.reset-btn {
-    background-color: #e8f5e9;
-    border: 1px solid #363;
-    border-radius: 10px;
-    padding: 4px 30px;
-}
-
-/* bio card */
-
-#bio-figure {
-    margin-top: 10px;
-}
-
-#bio-figure img {
-    border-radius: 10px;
-}
-
-/* home card  */
+/* homepage card  */
 #home-card {
     align-items: center;
     background-color: rgb(241, 248, 233);
@@ -227,6 +161,35 @@ legend {
     aspect-ratio: 1099 / 828;
     text-align: center;
     width: 100%;
+}
+
+.home-quote {
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 1px 0;
+    margin: 5px auto;
+    padding: 2px;
+    text-align: center;
+    width: 80%;
+}
+
+/* bio card */
+#bio-figure {
+    margin-top: 10px;
+}
+
+#bio-figure img {
+    border-radius: 10px;
+}
+
+.bio-quote {
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px 0;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
 }
 
 /* books page */
@@ -326,6 +289,62 @@ aside button:hover {
     padding: 10px;
 }
 
+input[type=text], 
+.contact-email input[type=email],
+textarea {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 60%;
+}
+
+input[type=text]:focus, 
+.contact-email input[type=email]:focus,
+textarea:focus {
+    border: 1px solid #f60;
+    outline: none;
+}
+
+.contact-btn {
+    background-color: #f60;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
+fieldset {
+    background-color: #e8f5e9;
+    border: .1em solid #363;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+
+legend {
+    padding: 3px 10px;
+}
+
+#required span {
+    color: #C30;
+}
+
+.reset-btn {
+    background-color: #e8f5e9;
+    border: 1px solid #363;
+    border-radius: 10px;
+    padding: 4px 30px;
+}
+
+.contact-quote {
+    background-color: rgb(232, 245, 233, 0.2);
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px 0;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
 /* Footer */
 footer {
     align-items: center;
@@ -355,7 +374,6 @@ input[type="email"],
 .copyrights {
     margin: 10px;
     text-align: center;
-    /* background-color: rgb(232, 245, 233, 0.1); */
     padding: 0 20px 5px;
     border: 2px solid  rgb(232, 245, 233, 0.1);
     border-radius: 10px;
@@ -599,6 +617,11 @@ input[type="email"],
 
     .book-quote:hover {
         background-color: rgb(232, 245, 233, 0);
+    }
+
+    /* Biography page  */
+    .bio-quote {
+        background-color: rgb(232, 245, 233, 0.2);
     }
 
     /* contact hero image */
