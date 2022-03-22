@@ -408,8 +408,7 @@ input[type="email"],
 
     .navbar li.active > a {
         padding: 1px 3px;
-    }
-    
+    }  
 }
 
 @media (max-width: 560px) {
