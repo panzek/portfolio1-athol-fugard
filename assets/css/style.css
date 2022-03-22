@@ -108,10 +108,8 @@ main {
 }
 
 .feature-intro {
-    background-color: #fff;
     padding: 0 5px;
     margin: 10px 5px;
-
 }
 
 .feature-intro a {
@@ -168,7 +166,7 @@ textarea:focus {
 
 fieldset {
     background-color: #e8f5e9;
-    border: .1em solid #2e7d32;
+    border: .1em solid #363;
     border-radius: 0 0 10px 10px;
     padding-bottom: 20px;
 }
@@ -183,7 +181,7 @@ legend {
 
 .reset-btn {
     background-color: #e8f5e9;
-    border: 1px solid #2e7d32;
+    border: 1px solid #363;
     border-radius: 10px;
     padding: 4px 30px;
 }
@@ -244,7 +242,7 @@ aside button {
 aside button:hover {
     background-color: #fff;
     color: #000;
-    text-decoration: underline 4px #2e7d32;
+    text-decoration: underline 4px #363;
 }
 
 #book-list {
@@ -262,7 +260,7 @@ aside button:hover {
 }
 
 #book-list ul li {
-    color: #2e7d32 
+    color: #363 
 }
 
 .book-quote {
@@ -488,7 +486,7 @@ input[type="email"],
     }
     
     .navbar a:hover {
-        text-decoration-color: #2e7d32;
+        text-decoration-color: #363;
     }
     
     .navbar li:not(.active):hover {
@@ -509,7 +507,7 @@ input[type="email"],
     }
     
     .hero-image-text {
-        color: #e5e5e5;
+        color: #fff;
         font-size: 1em;
         margin: auto;
         padding: 2em;
@@ -540,7 +538,7 @@ input[type="email"],
 
     #home-card-feature {
         width: 34%;
-        border: 4px solid rgb(245,245,245);
+        border: 2px solid rgb(245,245,245);
     }
 
     #home-card-feature .feature-intro p {
@@ -559,7 +557,7 @@ input[type="email"],
     #card {
         align-items: flex-start;
         background-color: #fff;
-        border: 2px solid rgb(241, 248, 233);
+        border: 2px solid rgb(245,245,245);
         border-radius: 10px;
         display: flex;
         flex-direction: row;
