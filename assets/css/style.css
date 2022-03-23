@@ -121,14 +121,10 @@ main {
     margin: 10px;
 }
 
-/* figure*/
 #card-feature img {
     aspect-ratio: 256 / 389;
+    display: block;
     width: 100%;
-}
-
-#card-feature .order {
-    order: -1;
 }
 
 /* homepage card  */
@@ -149,13 +145,18 @@ main {
     width: 95%
 }
 
-#home-card-feature img {
+.home-img {
     aspect-ratio: 285/211;
     display: block;
     text-align: center;
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
+
+.hero-image-text {
+    display: none;
+} 
 
 #home-card-feature .books-img {
     aspect-ratio: 1099 / 828;
@@ -173,7 +174,7 @@ main {
     width: 80%;
 }
 
-/* bio card */
+/* biography card */
 #bio-figure {
     margin-top: 10px;
 }
@@ -263,7 +264,14 @@ aside button {
     width: 100%;
 }
 
-/* contact card  */
+/* contact page  */
+.contact-btn {
+    background-color: #f60;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+
 #contact-card {
     margin-bottom: 40px;
 }
@@ -284,6 +292,24 @@ aside button {
     padding: 10px;
 }
 
+.contact-quote {
+    background-color: rgb(232, 245, 233, 0.2);
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 2px 0;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+fieldset {
+    background-color: #e8f5e9;
+    border: .1em solid #363;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+
 input[type=text], 
 .contact-email input[type=email],
 textarea {
@@ -300,25 +326,11 @@ textarea:focus {
     outline: none;
 }
 
-.contact-btn {
-    background-color: #f60;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 30px;
-}
-
-fieldset {
-    background-color: #e8f5e9;
-    border: .1em solid #363;
-    border-radius: 0 0 10px 10px;
-    padding-bottom: 20px;
-}
-
 legend {
     padding: 3px 10px;
 }
 
-#required span {
+.required span {
     color: #C30;
 }
 
@@ -329,16 +341,6 @@ legend {
     padding: 4px 30px;
 }
 
-.contact-quote {
-    background-color: rgb(232, 245, 233, 0.2);
-    border-radius: 10px;
-    border-style: dotted;
-    border-width: 2px 0;
-    margin: 5px auto;
-    padding: 10px;
-    text-align: center;
-    width: 80%;
-}
 
 /* Footer */
 footer {
@@ -404,19 +406,21 @@ input[type="email"],
     text-decoration: none;
 }
 
-/* Media Queries */
-/* medium screen sizes - 560px wide and down */
+/* Start of media queries section*/
 
-@media (max-width: 280px) {
-
-    #logo h1 {
-        font-size: 1.5em;
-    }
+/* portrait */
+/* Screen sizes equal to or narrower 280px wide */
+@media screen and (max-width: 280px) 
+and (orientation: portrait) {
 
     #gallery-header h1 {
         left: 50%;
         top: 70%;
         margin: 0;
+    }
+
+    #logo h1 {
+        font-size: 1.5em;
     }
 
     .navbar ul {
@@ -429,52 +433,10 @@ input[type="email"],
     }  
 }
 
-@media (max-width: 560px) {
-
-    #home-card-feature .order {
-        order: -1;
-    }
-
-    .lesson-from-aloes, 
-    hr,
-    .hero-image-text, 
-    .home-img {
-        display: none;
-    }
-
-    /* use display block to get more control over spacing to remove space between image and figcaption */
-    #card-feature img {
-        aspect-ratio: 256 / 389;
-        display: block;
-        width: 100%;
-    }
-    
-    #home-card-feature figcaption {
-        display: none;
-    }
-
-    figcaption {
-        background: #f5f5f5;
-        padding: 10px;
-    }
-        
-    h2, 
-    h3 {
-        text-align: center;
-    }
-
-    h4 {
-        text-align: left;
-    }
-
-}
-
-/* tablet and desktop size screens */
-@media (min-width: 560px) {
-
-    #home-card-feature figcaption {
-        display: none;
-    }
+/* Landscape  */
+/* Screen sizes equal to or larger than 1024px wide */
+@media screen and (min-width: 1024px) 
+and (orientation: landscape) {
 
     /* header */
     header {
@@ -542,12 +504,30 @@ input[type="email"],
         width: 250px;
     }
 
-    /* .feature-intro {
-        margin-top: 20px;
-    } */
-
     .feature-intro h2 {
         text-align: center;
+    }
+
+    #card {
+        align-items: flex-start;
+        background-color: #fff;
+        border: 2px solid rgb(245,245,245);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin: 40px auto ;
+        position: relative;
+        width: 80%; 
+    }
+
+    #card-feature {
+        border-radius: 10px; 
+        margin: 10px;
+        width: 100%;
+    }
+
+    .feature-intro {
+    margin: 4px 0;
     }
 
     /* home card  */
@@ -568,6 +548,10 @@ input[type="email"],
         border: 2px solid rgb(245,245,245);
     }
 
+    #home-card-feature figcaption {
+        display: none;
+    }
+
     #home-card-feature .feature-intro p {
         margin: 10px;
     }
@@ -578,61 +562,6 @@ input[type="email"],
 
     #home-card-feature #quotes {
         text-align: center;
-    }
-
-    /* Bio and books card  */
-    #card {
-        align-items: flex-start;
-        background-color: #fff;
-        border: 2px solid rgb(245,245,245);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row;
-        margin: 40px auto ;
-        position: relative;
-        width: 80%; 
-    }
-
-    #card-feature {
-        border-radius: 10px; 
-        margin: 10px;
-        width: 100%;
-    }
-
-      .feature-intro {
-        /* padding: 0 2px; */
-        margin: 4px 0;
-    }
-
-     /* Books page*/
-    #books-card-feature img {
-        aspect-ratio: 87 / 128;
-        width: 100%;
-    }
-
-    /* books page */
-    aside button {
-        text-decoration: none;
-    }
-
-    aside button:hover {
-        background-color: #fff;
-        border: 1px solid #f60;
-        color: #000;
-        text-decoration: underline 4px #363;
-    }
-
-    .book-quote {
-        width: 20%;
-    }
-
-    .book-quote:hover {
-        background-color: rgb(232, 245, 233, 0);
-    }
-
-    /* Biography page  */
-    .bio-quote {
-        background-color: rgb(232, 245, 233, 0.2);
     }
 
     /* contact hero image */
@@ -684,7 +613,36 @@ input[type="email"],
     legend {
         align-content: flex-start;
     }
+    
+    /* Biography page  */
+    .bio-quote {
+        background-color: rgb(232, 245, 233, 0.2);
+    }
 
+    /* books page */
+    aside button {
+        text-decoration: none;
+    }
+
+    aside button:hover {
+        background-color: #fff;
+        border: 1px solid #f60;
+        color: #000;
+        text-decoration: underline 4px #363;
+    }
+
+    #books-card-feature img {
+        aspect-ratio: 87 / 128;
+        width: 100%;
+    }
+
+    .book-quote {
+        width: 20%;
+    }
+
+    .book-quote:hover {
+        background-color: rgb(232, 245, 233, 0);
+    }
     /* gallery */
     #gallery {
         columns: 5 350px;
