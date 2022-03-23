@@ -92,7 +92,7 @@ main {
 /* card feature  */
 #card {
     align-items: center;
-    background-color: #e8f5e9;
+    background-color: rgb(241, 248, 233);
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -201,13 +201,7 @@ aside button {
     cursor: pointer;
     font-size: 1.5em;
     padding: 10px;
-}
-
-aside button:hover {
-    background-color: #fff;
-    border: 1px solid #f60;
-    color: #000;
-    text-decoration: underline 4px #363;
+    text-decoration: underline 4px #000;
 }
 
 #book-list {
@@ -614,6 +608,18 @@ input[type="email"],
     #books-card-feature img {
         aspect-ratio: 87 / 128;
         width: 100%;
+    }
+
+    /* books page */
+    aside button {
+        text-decoration: none;
+    }
+
+    aside button:hover {
+        background-color: #fff;
+        border: 1px solid #f60;
+        color: #000;
+        text-decoration: underline 4px #363;
     }
 
     .book-quote {
