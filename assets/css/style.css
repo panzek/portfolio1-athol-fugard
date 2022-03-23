@@ -388,6 +388,10 @@ input[type="email"],
     color: #000;
 }
 
+.font-sizing {
+    font-size: small;
+}
+
 #social-networks {
     margin: 10px;
     text-align: center;
