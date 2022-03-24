@@ -214,12 +214,20 @@ aside button {
 }
 
 #book-list ul {
-    list-style: square inside;
-    margin: 10px;
+    list-style: none;
+    margin: 0 10px 30px 30px;
+    text-align: left;
 }
 
-#book-list ul li {
-    color: #363 
+/* Change the bullet point color of list item */
+#book-list ul li::before {
+    content: "\2022";
+    color:#C30;
+    display: inline-block;
+    font-weight: 900;
+    margin-left: -1em;
+    padding: 10px 0 0;
+    width: 0.8em;
 }
 
 .book-quote {
