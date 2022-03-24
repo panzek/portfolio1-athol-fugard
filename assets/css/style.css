@@ -158,12 +158,6 @@ main {
     display: none;
 } 
 
-#home-card-feature .books-img {
-    aspect-ratio: 1099 / 828;
-    text-align: center;
-    width: 100%;
-}
-
 .home-quote {
     border-radius: 10px;
     border-style: dotted;
