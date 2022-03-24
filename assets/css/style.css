@@ -100,7 +100,7 @@ main {
     width: 100%;
 }
 
-#card-feature {
+.card-feature {
     background-color: #fff;
     border: none;
     border-radius: 10px;
@@ -127,7 +127,7 @@ figcaption {
     padding: 5px 10px;
 }
 
-#card-feature img {
+.card-feature img {
     aspect-ratio: 256 / 389;
     display: block;
     width: 100%;
@@ -193,15 +193,21 @@ figcaption {
 }
 
 /* books page */
-aside button {
+.bio-btn {
     background-color: #f60;
     border: none;
     border-radius: 10px;
     color: #000;
     cursor: pointer;
     font-size: 1.5em;
+    margin: 20px auto 10px;
     padding: 10px;
     text-decoration: underline 4px #000;
+    width: 60%;
+}
+
+.bio-btn a {
+    color: #000;
 }
 
 #book-list {
@@ -538,7 +544,7 @@ and (orientation: landscape) {
         width: 80%; 
     }
 
-    #card-feature {
+    .card-feature {
         border-radius: 10px; 
         margin: 10px;
         width: 100%;
@@ -632,12 +638,7 @@ and (orientation: landscape) {
         background-color: rgb(232, 245, 233, 0.2);
     }
 
-    /* books page */
-    aside button {
-        text-decoration: none;
-    }
-
-    aside button:hover {
+    .bio-btn:hover {
         background-color: #fff;
         border: 1px solid #f60;
         color: #000;
