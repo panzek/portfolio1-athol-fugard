@@ -124,8 +124,7 @@ main {
 
 figcaption {
     font: italic 600 0.8em roboto;
-    margin-left: 10px;
-    padding-top: 5px;
+    padding: 5px 10px;
 }
 
 #card-feature img {
@@ -168,7 +167,7 @@ figcaption {
     border-radius: 10px;
     border-style: dotted;
     border-width: 1px 0;
-    margin: 5px auto;
+    margin: 15px auto;
     padding: 2px;
     text-align: center;
     width: 80%;
