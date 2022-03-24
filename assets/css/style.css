@@ -398,6 +398,7 @@ input[type="email"],
 
 #copyrights-socials a {
     color: #000;
+    text-decoration: none;
 }
 
 .font-sizing {
