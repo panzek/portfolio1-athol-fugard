@@ -341,6 +341,17 @@ legend {
     padding: 4px 30px;
 }
 
+.form-message {
+    align-items: center;
+    background-color: rgb(241, 248, 233);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px;
+    height: 100vh;
+    text-align: center;
+    border-top: 2px solid;
+}
+
 .top {
     display: block;
     text-align: center;
