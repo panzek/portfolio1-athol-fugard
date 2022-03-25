@@ -159,10 +159,6 @@ figcaption {
     border-radius: 10px 10px 0 0;
 }
 
-.hero-image-text {
-    display: none;
-} 
-
 .home-quote {
     border-radius: 10px;
     border-style: dotted;
@@ -289,7 +285,7 @@ figcaption {
     margin-bottom: 40px;
 }
 
-#contact-card-feature img {
+.contact-card-feature img {
     aspect-ratio: 285/211;
     display: block;
     text-align: center;
@@ -457,6 +453,16 @@ and (orientation: portrait) {
     }  
 }
 
+/* Screen sizes equal to or narrower 1024px wide */
+/* disable hero-image text from displaying on mobile and tablets */
+@media screen and (max-width: 1024px) 
+and (orientation: portrait) {
+
+    .hero-image-text {
+        display: none;
+    } 
+}
+
 /* Landscape  */
 /* Screen sizes equal to or larger than 1024px wide */
 @media screen and (min-width: 1024px) 
@@ -526,6 +532,10 @@ and (orientation: landscape) {
         padding: 2em;
         text-align: center;
         width: 250px;
+    }
+
+    .hero-image-text h2 {
+        color: #fff;
     }
 
     .feature-intro h2 {
@@ -611,13 +621,13 @@ and (orientation: landscape) {
         width: 60%;
     }
 
-    #contact-card-feature {
+    .contact-card-feature {
         border-radius: 10px;
         margin: 5px;
         width: 100%;
     }
 
-    #contact-card-feature img{
+    .contact-card-feature img{
         aspect-ratio: 285/211;
         text-align: center;
         width: 100%;
