@@ -454,9 +454,6 @@ input[type="email"],
 /* footer ends  */
 
 /* Start of media queries section*/
-
-/* portrait */
-/* Screen sizes equal to or narrower 280px wide */
 @media screen and (max-width: 280px) 
 and (orientation: portrait) {
 
@@ -480,10 +477,19 @@ and (orientation: portrait) {
     }  
 }
 
-/* Screen sizes equal to or narrower 1024px wide */
-/* disable hero-image text from displaying on mobile and tablets */
-@media screen and (max-width: 1024px) 
+/* Screen sizes equal to or narrower 560px wide */
+/* styling to stop hero image text from displaying on mobile devices  */
+/* @media screen and (max-width: 560px) 
 and (orientation: portrait) {
+
+    .hero-image-text {
+        display: none;
+    }
+} */
+
+/* Screen sizes equal to or narrower 1024px wide */
+/* styling to stop hero-image text from displaying on mobile and tablets */
+@media screen and (max-width: 912px) {
 
     .hero-image-text {
         display: none;
