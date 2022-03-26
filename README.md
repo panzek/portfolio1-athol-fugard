@@ -83,23 +83,23 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
         * The wireframes were created using [Balsamiq](https://balsamiq.com/). And they were designed for mobile, tablets, and desktop. 
             * Mobile
 
-        ![Mobile - Homepage Page Wireframe](doc/images/desktop-homepage.png)
+        ![Mobile - Homepage Page Wireframe](doc/wireframes/mobile-homepage.png)
 
-        ![Mobile - Biography Page Wireframe](doc/images/mobile-biography-page.png)
+        ![Mobile - Biography Page Wireframe](doc/wireframes/mobile-biography-page.png)
 
-        ![Mobile - Books Page Wireframe](doc/images/mobile-books-page.png)
+        ![Mobile - Books Page Wireframe](doc/wireframes/mobile-books-page.png)
 
-        ![Mobile - Contact Page Wireframe](doc/images/mobile-contact-page.png)
+        ![Mobile - Contact Page Wireframe](doc/wireframes/mobile-contact-page.png)
 
         * Desktop
 
-        ![Desktop - Homepage Page Wireframe](doc/images/desktop-homepage.png)
+        ![Desktop - Homepage Page Wireframe](doc/wireframes/desktop-homepage.png)
 
-        ![Desktop - Biography Page Wireframe](doc/images/desktop-biography-page.png)
+        ![Desktop - Biography Page Wireframe](doc/wireframes/desktop-biography-page.png)
         
-        ![Desktop - Books Page Wireframe](doc/images/desktop-books-page.png)
+        ![Desktop - Books Page Wireframe](doc/wireframes/desktop-books-page.png)
 
-        ![Desktop - Contact Page Wireframe](doc/images/desktop-contact-page.png)
+        ![Desktop - Contact Page Wireframe](doc/wireframes/desktop-contact-page.png)
 
 
         * In implementation, there was need to make the following changes to the initial concepts:
@@ -112,7 +112,7 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
     * Header
         * Logo and Title
             * The logo is a Font Awesome user-pen icon carefully chosen to represent a writer. And the title is the name of the playwright.
-            * The logo and title have an implicit link to the homepage as a long-standing web convention and fluid user experience.
+            * The logo and title have an implicit link to the homepage, following a long-standing web convention and for fluid user experience.
 
             ![Logo and title](doc/images/athol-fugard-logo.png)
 
@@ -140,6 +140,8 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
         * Handling the hero images on the homepage and contact pages, I use the <picture> element “art direction” - a technique of changing “image displayed to suit different image display sizes.” I created 3 image files of different picture and sizes for different viewport widths: *The Island* stage production picture and Fugard group photo with John Kani and Winston Ntshona serve viewport of 1024px wide or higher and landscape view larger tablets. Fugard’s personal photo serves portrait-view mobile devices and small tablets. 
         * Also, I use the WebP image formats to maintain both a low file size and high-quality of the hero images and all other images on the website. 
 
+        ![Homepage on desktop](doc/images/live-desktop-homepage.png)
+
     * Card Section
         * The card section is the content section that introduces the reader to the relevant sections of the website takes a **progressive disclosure** approach, by revealing to the user what is in the biography and book gallery pages intended and encouraging them to go further beyond the homepage to create fluid user experience. The card section is split into three areas: Biography, Fugard’s photo, and Books sections, with relevant supporting image for each section. 
         * The first sub-section section is a short biography of Fugard with a “read more” link to the full biography page. It includes Fugard’s personal photo to put a face to it. 
@@ -147,21 +149,30 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
         * The third sub section of the card section contains introduces the user with a summary of Fugard’s writing with the image of his two books covers. The Bio and Books sub-sections included links that user will click to navigate to these pages.
         * The card section is structured in such a way that it attempts to enable a visitor on the website to immediately ascertain who Fugard is, what he writes about, who were his major collaborators, and, more importantly, let the user easily access the information that interest them and also encourage the user to want to read Fugard’s books, go watch his plays on stage, and possibly buy his books. The tricolor structure of the card section is maintained throughout the page for intuitiveness and consistency.
 
-    * The Footer
+
+    * Footer
         * The footer section is split into 3 sections. One, a mailing list sign-up form that allows and encourages the user to subscribe to receive information related to Athol Fugard and his books. To keep it simple and encouraging, the user is required to submit email address only. Two, is the copyrights section that includes my social media links so that recruiters and collaborators can connect with me.
         * The footer section includes links to three relevant social media accounts: Facebook, Instagram, and Twitter. The social networks links communicate with users and encourage them to keep connected with Athol Fugard via social media. The links will open to a new tab to allow easy navigation for the user.
         * The footer like the header is consistent across the pages for easy navigation and intuitive experience. The header section, the main content, and the footer section.
 
+        ![Footer section on desktop](doc/images/live-desktop-footer.png)
+
     * Biography Page
         * Card feature area of the biography page is split into 3 sections to maintain consistency with the homepage. Section 1 contains Fugard’s full biography. Section 2 is his personal photo and one of his quotes. And section 3 contains an analysis of his writings. Inside this section is an aside for Fugard’s milestones: biodata, notable works, and selected awards.
+
+        ![Biography page desktop](doc/images/live-desktop-biography.png)
 
     * Books Page
         * The book gallery provides the user with covers of some of Fugard’s books. And each book cover has a link to [Amazon](https://panzek.github.io/portfolio1-athol-fugard/).
         * This link is valuable to the users as they will be able to visit an online store where they can see the book description and possibly buy the book.
         * Quality of some of these book covers are not high resolution, which appears to slightly compromised image quality. However, they are the best quality available on the internet, and it requires that only Fugard’s book covers for this illustration. 
 
+        ![Books page on desktop](doc/images/live-desktop-books-page.png)
+
     * Contact Page
         * This page encourages the user to get in touch for questions on Fugard’s speaking or books-signing events and to request copyrights permission to use his books. The form is kept simple and clear without much information being requested from the website user, only the first name, last name, email address, and message. Terms and conditions button that the reader must check before the form can be submitted is included to provide clarity on the terms in which the information being provided by the user will be processed and used. It also helps to prevent site abuse.
+
+        ![Contact page  on desktop](doc/images/logo-desktop.png)
 
 
 ## Technology Stack
@@ -181,8 +192,14 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
 
 ## Testing
 * Validator Testing
-    * [W3C Markup Validator](https://validator.w3.org/) is used to check the markup validity of the HTML5 for technical quality and correctness.
-    * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) – used to check the markup validity of the CSS3 for technical quality and correctness.
+    * [W3C Markup Validator](https://validator.w3.org/) is used to check the markup validity of the HTML5 for technical quality and correctness, and no errors found.
+
+     ![Insufficient color contrast](doc/images/c.)
+
+    * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) – used to check the markup validity of the CSS3 for technical quality and correctness, and no errors found.
+
+    ![CSS Validation Result](doc/images/css-validator-results.png)
+
     * [BrowserStack](https://www.browserstack.com/) is used to test the site on different browsers and real mobile devices.
     * [Responsinator](https://www.responsinator.com/) is used to test the site on and real mobile devices.
 
@@ -199,20 +216,23 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
 
     (`code`)
 
-    * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. (screenshot)
-    * Change the link text from white to black color. When checked through ---, the new font color provided a contrast ratio of … 
+    * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. 
+
+    ![Insufficient color contrast](doc/images/insufficient-color-contrast.png)
+
+    * Fixed issue by changing the link text from white to black color.
 
     (`code`)
 
-    * [Accessibility Insights]( https://accessibilityinsights.io/) detected there were 6 instances of social media links in footer that did not have an accessible name. (screenshot)
+    * [Accessibility Insights]( https://accessibilityinsights.io/) detected there were 6 instances of social media links in footer that did not have an accessible name. 
+
+     ![Insufficient color contrast](doc/images/insufficient-color-contrast.png)
+
     * There was aria-label attribute and title attribute that provide an accessible name that describes the link's purpose, but checks showed they were added in the Font Awesome icon code instead of the social media links reference. Fixed these accessibility issues by moving the aria label and title attributes and values to relevant area of the social media links.
 
     (`code`)
 
     * It must be noted that before this test was carried out in Accessibility Insights, the site scored 100% for accessibility testing in Lighthouse. This accessibility testing gap in Lighthouse seems to suggest that a more specific tool for testing accessibility such as Accessibility Insights may be required always for a more effective testing and reliable results.
-
-    ![alt text](image.jpg)
-
 
 ## Deployment 
 * The website was deployed to GitHub Pages. These were the steps taken for the deployment:
