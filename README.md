@@ -205,21 +205,29 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
     ![CSS Validation Result](doc/images/css-validator-results.png)
 
     * [BrowserStack](https://www.browserstack.com/) was used to test the site on different browsers and real mobile devices.
-    * [Responsinator](https://www.responsinator.com/) was used to test the site real mobile devices.
+    * [Responsinator](https://www.responsinator.com/) was used to test the site on real mobile devices.
 
 * Accessibility Testing
     * [Accessibility Insights](https://accessibilityinsights.io/) was used to check and fix accessibility issues.
     * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used to test accessibility.
 
 * Fixed Bugs:
-    * Lighthouse detected that a background image displayed with incorrect aspect ratio. 
-        * Fixed the issue by changing the displayed aspect ratio from 153 x 113 (incorrect ratio) to 1099 x 828 (correct ratio).
-
     * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. 
 
     ![Insufficient color contrast](doc/images/insufficient-color-contrast.png)
 
     * Fixed issue by changing the link text from white to black color.
+
+    * Chrome's Lighthouse detected that a background image displayed with incorrect aspect ratio. 
+        * Fixed the issue by changing the displayed aspect ratio from 153 x 113 (incorrect ratio) to 1099 x 828 (correct ratio).
+
+    * Thereafter, I ran a final check through Chrome's lighthouse audit service, and it returns the reports below: 
+
+    * Mobile
+    ![Insufficient color contrast](doc/images/lighthouse-audit-mobile.png)
+
+    * Desktop
+    ![Insufficient color contrast](doc/images/lighthouse-audit-desktop.png)
 
 ## Deployment 
 * The website was deployed to GitHub Pages. These were the steps taken for the deployment:
