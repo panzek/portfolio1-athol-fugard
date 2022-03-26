@@ -159,6 +159,23 @@ figcaption {
     border-radius: 10px 10px 0 0;
 }
 
+.home-two-img {
+    aspect-ratio: 1600 / 1200;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.home-three-img {
+    aspect-ratio: 1099 x 828;
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
 .home-quote {
     border-radius: 10px;
     border-style: dotted;
