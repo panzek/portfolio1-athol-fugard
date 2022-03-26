@@ -8,47 +8,47 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
 
 
 ## Table of Contents
-* Introduction
+* [Introduction](#introduction)
 
-* UX - User Experience Design
-    * User Stories 
-    * Design
-    * Color Scheme
-    * Typography
-    * Wireframes (separate document)
+* [UX - User Experience Design](#UX-user-experience-design)
+    * [User Stories](#user-stories) 
+    * [Design](#design)
+    * [Color Scheme](#color-scheme)
+    * [Typography](#typography)
+    * [Wireframes](#wireframes)
 
-* Features
-    * Existing features
-        * Header
-            - Logo and Title
-            - Navigation menus
-        * The landing page hero image
-        * Card Section
-        * The Footer
-        * Books Page
-        * Contact Page
-        * Hidden Pages
+* [Features](#Features)
+    * [Existing features](#existing-features)
+        * [Header](#header)
+            - [Logo and Title](#logo-and-title)
+            - [Navigation menus](#navigation-menus)
+        * [anding page hero image](#landing-page-hero-image)
+        * [Card Section](#card-section)
+        * [Footer](#footer)
+        * [Books Page](#books-page)
+        * [Contact Page](#contact-page)
+        * [Hidden Pages](#hidden-pages)
 
-* Technology Stack
-    * Languages Used
-    * Frameworks, Libraries, and Programs Used 
+* [Technology Stack](#technology-stack)
+    * [Languages Used](#languages-used)
+    * [Frameworks, Libraries, and Programs Used](#Frameworks-libraries-and-programs-used) 
 
 * Testing
-    * Validator Testing
-    * Accessibility Testing 
+    * [Validator Testing](#validator-testing)
+    * [Accessibility Testing](#accessibility-testing) 
 
-* Bugs:
-    * Reported 
-    * Resolved
+* [Fixed Bugs}(#fixed-bugs)
+    * [Reported](#reported) 
+    * [Resolved](#resolved)
 
-* Deployment
-* Credits
-    * Content
-    * Media
-    * Acknowledgements
+* [Deployment](#deployment)
+* [Credits](#credits)
+    * [content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
-* User Stories
+* User Stories 
     * As a user, I want to see navigation menus so that I will be able to access the website from any page.
         * The header contains the navigation menus. It is fixed to the top of the page and makes it for you to navigate to any of the pages.
     * As a user, I want to see an Author biography page so that I can know more about Athol Fugard, his writings, and his contribution to apartheid and post-apartheid South African drama.
@@ -83,24 +83,28 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
         * The wireframes were created using [Balsamiq](https://balsamiq.com/). And they were designed for mobile, tablets, and desktop. 
             * Mobile
 
-        ![Mobile - Homepage Page Wireframe](doc/wireframes/mobile-homepage.png)
 
-        ![Mobile - Biography Page Wireframe](doc/wireframes/mobile-biography-page.png)
+        ![Mobile - Homepage Page Wireframe](doc/wireframes/mobile-homepage1.png)
 
-        ![Mobile - Books Page Wireframe](doc/wireframes/mobile-books-page.png)
+        ![Mobile - Biography Page Wireframe](doc/wireframes/mobile-biography-page1.png)
 
-        ![Mobile - Contact Page Wireframe](doc/wireframes/mobile-contact-page.png)
+        ![Mobile - Books Page Wireframe](doc/wireframes/mobile-books-page1.png)
+
+        ![Mobile - Contact Page Wireframe](doc/wireframes/mobile-contact-page1.png)
+       
 
         * Desktop
 
-        ![Desktop - Homepage Page Wireframe](doc/wireframes/desktop-homepage.png)
-
-        ![Desktop - Biography Page Wireframe](doc/wireframes/desktop-biography-page.png)
         
-        ![Desktop - Books Page Wireframe](doc/wireframes/desktop-books-page.png)
+        ![Desktop - Homepage Page Wireframe](doc/wireframes/desktop-homepage1.png)
 
-        ![Desktop - Contact Page Wireframe](doc/wireframes/desktop-contact-page.png)
+        ![Desktop - Biography Page Wireframe](doc/wireframes/desktop-biography-page1.png)
+        
+        ![Desktop - Books Page Wireframe](doc/wireframes/desktop-books-page1.png)
 
+        ![Desktop - Contact Page Wireframe](doc/wireframes/desktop-contact-page1.png)
+
+        
 
         * In implementation, there was need to make the following changes to the initial concepts:
             * The book page on mobile was reconfigured to take one book cover instead of two to improve the User Experience.
@@ -185,54 +189,37 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
     * [Git](https://git-scm.com/)
     * [GitHub](https://github.com/)
     * [Gitpod](https://www.gitpod.io/)
-    * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) is used for debugging
+    * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) 
     * [Google Fonts](https://fonts.google.com/)
     * [Material Design](https://material.io/resources/color/#!/)
 
 
 ## Testing
 * Validator Testing
-    * [W3C Markup Validator](https://validator.w3.org/) is used to check the markup validity of the HTML5 for technical quality and correctness, and no errors found.
+    * [W3C Markup Validator](https://validator.w3.org/) was used to check the markup validity of the HTML5 for technical quality and correctness, and no errors found.
 
-     ![Insufficient color contrast](doc/images/c.)
+     ![HTML Validation Result](doc/images/html-validator-report.png)
 
-    * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) – used to check the markup validity of the CSS3 for technical quality and correctness, and no errors found.
+    * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the markup validity of the CSS3 for technical quality and correctness, and no errors found.
 
     ![CSS Validation Result](doc/images/css-validator-results.png)
 
-    * [BrowserStack](https://www.browserstack.com/) is used to test the site on different browsers and real mobile devices.
-    * [Responsinator](https://www.responsinator.com/) is used to test the site on and real mobile devices.
+    * [BrowserStack](https://www.browserstack.com/) was used to test the site on different browsers and real mobile devices.
+    * [Responsinator](https://www.responsinator.com/) was used to test the site real mobile devices.
 
 * Accessibility Testing
-    * [Accessibility Insights](https://accessibilityinsights.io/).
+    * [Accessibility Insights](https://accessibilityinsights.io/) was used to check and fix accessibility issues.
     * [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used to test accessibility.
 
 * Fixed Bugs:
     * Lighthouse detected that a background image displayed with incorrect aspect ratio. 
-
-    ![alt text](image.jpg)
-
-    * Fixed the issue by changing the displayed aspect ratio from 153 x 113 (incorrect ratio) to 1099 x 828 (correct ratio).
-
-    (`code`)
+        * Fixed the issue by changing the displayed aspect ratio from 153 x 113 (incorrect ratio) to 1099 x 828 (correct ratio).
 
     * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. 
 
     ![Insufficient color contrast](doc/images/insufficient-color-contrast.png)
 
     * Fixed issue by changing the link text from white to black color.
-
-    (`code`)
-
-    * [Accessibility Insights]( https://accessibilityinsights.io/) detected there were 6 instances of social media links in footer that did not have an accessible name. 
-
-     ![Insufficient color contrast](doc/images/insufficient-color-contrast.png)
-
-    * There was aria-label attribute and title attribute that provide an accessible name that describes the link's purpose, but checks showed they were added in the Font Awesome icon code instead of the social media links reference. Fixed these accessibility issues by moving the aria label and title attributes and values to relevant area of the social media links.
-
-    (`code`)
-
-    * It must be noted that before this test was carried out in Accessibility Insights, the site scored 100% for accessibility testing in Lighthouse. This accessibility testing gap in Lighthouse seems to suggest that a more specific tool for testing accessibility such as Accessibility Insights may be required always for a more effective testing and reliable results.
 
 ## Deployment 
 * The website was deployed to GitHub Pages. These were the steps taken for the deployment:
@@ -265,7 +252,8 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
     * Homepage: 
         * Biography text was taken from [Wikipedia](https://en.wikipedia.org/wiki/Athol_Fugard). 
         * Book short introduction text was taken from [Britannica](https://www.britannica.com/biography/Athol-Fugard).
-        * Bio Page: 
+    
+    * Biography Page: 
         * Text for the section “Athol Fugard: Biography” was taken from <link>. 
         * Text for the section, “Fugard: Aesthetic Vision of Theatre” is an excerpt from my PhD Thesis, **Literary Aesthetics of Modern South African Drama** (Dept. of English, University of Lagos, 2014). 
         * The text for “Milestones” was taken from [Wikipedia]( https://en.wikipedia.org/wiki/Athol_Fugard).
@@ -286,7 +274,7 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
 
 * Media
     * Homepage: 
-        * Hero image is from [Exeunt Magazine](http://exeuntmagazine.com/reviews/the-island/). 
+        * Hero image was from [Exeunt Magazine](http://exeuntmagazine.com/reviews/the-island/). 
         * Fugard’s personal photo was from [IMDb](https://www.imdb.com/name/nm0297538/mediaviewer/rm2364570112/). 
         * Group photo with Athol Fugard, John Kani, and Winston Ntshona was from [Britannica](https://cdn.britannica.com/04/68004-050-3CF39874/Athol-Fugard-actors-John-Kani-Winston-Ntshona-1973.jpg). 
 
@@ -294,10 +282,10 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
         * Book covers were sourced and picked randomly from Google](https://www.google.com/search?q=athol+fugard)
 
     * All Images: 
-        * [Convertio](https://convertio.co/) – used to convert the images from jpeg to webp format.
-        * [Tinypng](https://tinypng.com/) – used to reduce the WEBP file size.
+        * [Convertio](https://convertio.co/) was used to convert the images from jpeg to webp format.
+        * [Tinypng](https://tinypng.com/) was used to reduce the WEBP file size.
 
 * Acknowledgements
-    * [Akshat Garg]( https://github.com/akshatnitd), my [Code Institute](https://github.com/Code-Institute-Org) mentor, for his patience and care, and for being awesome with his supervision.
+    * [Akshat Garg](https://github.com/akshatnitd), my [Code Institute](https://github.com/Code-Institute-Org) mentor, for his patience and care, and for being awesome with his supervision.
     * To Student care team for reaching out and checking that I was getting on well with the course.
     * To all those who contributed to different discussions in Slack, especially “Project Portfolio 1”, “Peer Code Review”, and 2022 Cohort Class channels that I visited regularly. Your numerous questions, answers to those questions, and comments on wide range of coding concerns provided insights, pointers, and motivation.

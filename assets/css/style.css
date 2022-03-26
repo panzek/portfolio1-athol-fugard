@@ -144,7 +144,7 @@ figcaption {
     padding: 10px 0 40px;
 }
 
-#home-card-feature {
+.home-card-feature {
     background-color: #fff;
     border: none;
     border-radius: 10px;
@@ -160,7 +160,7 @@ figcaption {
 }
 
 .home-two-img {
-    aspect-ratio: 1600 / 1200;
+    aspect-ratio: 1600/1200;
     display: block;
     text-align: center;
     width: 100%;
@@ -168,13 +168,12 @@ figcaption {
 }
 
 .home-three-img {
-    aspect-ratio: 1099 x 828;
+    aspect-ratio: 1099/828;
     display: block;
     text-align: center;
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
-
 
 .home-quote {
     border-radius: 10px;
@@ -477,17 +476,7 @@ and (orientation: portrait) {
     }  
 }
 
-/* Screen sizes equal to or narrower 560px wide */
-/* styling to stop hero image text from displaying on mobile devices  */
-/* @media screen and (max-width: 560px) 
-and (orientation: portrait) {
-
-    .hero-image-text {
-        display: none;
-    }
-} */
-
-/* Screen sizes equal to or narrower 1024px wide */
+/* Screen sizes equal to or narrower 912px wide */
 /* styling to stop hero-image text from displaying on mobile and tablets */
 @media screen and (max-width: 912px) {
 
