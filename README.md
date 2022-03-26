@@ -224,9 +224,11 @@ Athol Fugard is the unofficial website of Athol Fugard, the South African playwr
     * Thereafter, I ran a final check through Chrome's lighthouse audit service, and it returns the reports below: 
 
     * Mobile
+    
     ![Insufficient color contrast](doc/images/lighthouse-audit-mobile.png)
 
     * Desktop
+    
     ![Insufficient color contrast](doc/images/lighthouse-audit-desktop.png)
 
 ## Deployment 
